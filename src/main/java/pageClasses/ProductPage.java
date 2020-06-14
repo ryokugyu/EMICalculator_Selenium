@@ -1,64 +1,48 @@
 package pageClasses;
-/*
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.aventstack.extentreports.ExtentTest;
-//import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.Status;
+import com.pageObjects.EMICalculatorPageObjects;
 
 import baseClasses.pageBaseClass;
 import utilities.WriteResultsToExcel;
 
 public class ProductPage extends pageBaseClass {
 	
+	public EMICalculatorPageObjects amountcalculator;
+	
 	ProductPage(WebDriver driver, ExtentTest logger) {
-		super();
+		super(driver,logger);
+		
+		amountcalculator = new EMICalculatorPageObjects(driver, logger);
+		PageFactory.initElements(driver,amountcalculator);
 	}
 
-	@FindBy(xpath="//*[@id=\"leschemewrapper\"]/div/div/div/div/label[2]")
-	WebElement EMIInArrears;
-	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[3]/div[2]/table[1]/tbody[1]/tr[2]/td[1]")
-	WebElement readMore;
-
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[3]/div[2]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]")
-	WebElement principalAmount;
-
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[3]/div[2]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]")
-	WebElement interestAmount;
-	
-	
 	public void clickEMIInArrears() {
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		EMIInArrears.click();
+		EMICalculatorPageObjects.EMIInArrears.click();
+		logger.log(Status.INFO, "EMI in Arrears Option selected succesfully.");
 	}
 	
 
 
 	public void clickReadMore() {
-		Actions action = new Actions(driver);
-		action.contextClick(readMore).perform();
-		System.out.println("Entering into clickReadMore function: ");
-		readMore.click();
+		EMICalculatorPageObjects.readMore.click();
+		logger.log(Status.INFO, "ALl details of 2020 displayed succesfully.");
 	}
 
 	public static String principalAmountMonth1;
 	public static String interestAmountMonth1;
 
 	public void fetchTestResult() {
-		principalAmountMonth1 = principalAmount.getText();
-		System.out.println(principalAmountMonth1);
-		
-		interestAmountMonth1 = interestAmount.getText();
-		System.out.println(interestAmountMonth1);
+		principalAmountMonth1 = EMICalculatorPageObjects.principalAmount.getText();
+		interestAmountMonth1 = EMICalculatorPageObjects.interestAmount.getText();
 	}
 
-	String name = WriteResultsToExcel.writeData(principalAmountMonth1, interestAmountMonth1);
-	//logger.log(Status.INFO, "Data written in excel sheet- " +name);
-}*/
+	public void writeData() {
+		String name = WriteResultsToExcel.writeData(principalAmountMonth1, interestAmountMonth1);
+		logger.log(Status.INFO, "Data written in excel sheet- "+name);
+	}
+}

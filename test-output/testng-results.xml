@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18779" started-at="2020-06-14T09:34:35Z" finished-at="2020-06-14T09:34:53Z">
+  <suite name="Suite" duration-ms="10054" started-at="2020-06-14T10:56:05Z" finished-at="2020-06-14T10:56:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18779" started-at="2020-06-14T09:34:35Z" finished-at="2020-06-14T09:34:53Z">
+    <test name="Test" duration-ms="10054" started-at="2020-06-14T10:56:05Z" finished-at="2020-06-14T10:56:15Z">
       <class name="com.testClasses.EMICalculatorBaseTest">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@25bbf683]" name="emicalculator" duration-ms="16572" started-at="2020-06-14T09:34:36Z" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-14T09:34:52Z">
+        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@25bbf683]" name="emicalculator" duration-ms="9288" started-at="2020-06-14T10:56:06Z" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-14T10:56:15Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@25bbf683]" name="flushReports" is-config="true" duration-ms="1058" started-at="2020-06-14T09:34:52Z" finished-at="2020-06-14T09:34:53Z">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@25bbf683]" name="flushReports" is-config="true" duration-ms="427" started-at="2020-06-14T10:56:15Z" finished-at="2020-06-14T10:56:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->

@@ -1,49 +1,46 @@
 package com.testClasses;
 
+import org.testng.annotations.Test;
+
 import java.util.Hashtable;
 import java.util.Properties;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 import baseClasses.baseTestClass;
 import pageClasses.LandingPage;
+import pageClasses.ProductPage;
 import utilities.ReadPropertiesFile;
 import utilities.TestDataProvider;
 
 public class EMICalculatorBaseTest extends baseTestClass {
 	LandingPage landingPage;
-	//ProductPage productPage;
+	ProductPage productPage;
 	
 	@Test(dataProvider="EMICalculatorTestData",description="executes the complete test")
 	public void emicalculator(Hashtable<String, String> testData) {
 		
 		Properties prop = ReadPropertiesFile.readConfiguration();
 		
+		//creating test for logger to record
 		logger = report.createTest("EMI_Calculator Test");
 		
+		//initializing the browser
 		invokeBrowser(prop.getProperty("browserName"));
+		
 		landingPage = openApplication(testData.get("WebPageURL"));
 		landingPage.clickCarLoanButton();
+		landingPage.enterLoanAmount(testData.get("CarLoanAmount"));
+		landingPage.enterLoanInterestRate(testData.get("InterestRate"));
 		
-		String CarLoanAmount = testData.get("CarLoanAmount");
-		//System.out.println(CarLoanAmount);
-		landingPage.enterLoanAmount(CarLoanAmount);
+		productPage = landingPage.enterLoanTerm(testData.get("LoanTenure"));
+		productPage.clickEMIInArrears();
+		productPage.clickReadMore();
+		productPage.fetchTestResult();
+		productPage.writeData();
 		
-		String InterestRate = testData.get("InterestRate");
-		//System.out.println(InterestRate);
-		landingPage.enterLoanInterestRate(InterestRate);
-		
-		String LoanTenure = testData.get("LoanTenure");
-		//System.out.println(LoanTenure);
-		landingPage.enterLoanTerm(LoanTenure);
-		
-		landingPage.clickEMIInArrears();
-		landingPage.clickReadMore();
-		landingPage.fetchTestResult();
-		landingPage.writeData();
 		logger.log(Status.PASS, "EMI Calculator Base Test Pass");
 	}
 	

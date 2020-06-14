@@ -11,11 +11,13 @@ import com.aventstack.extentreports.Status;
 import baseClasses.pageBaseClass;
 import com.pageObjects.EMICalculatorPageObjects;
 
-import utilities.WriteResultsToExcel;
+//import utilities.WriteResultsToExcel;
+import pageClasses.ProductPage;
 
 public class LandingPage extends pageBaseClass {
 	
 	public EMICalculatorPageObjects amountcalculator;
+	public ProductPage productPage;
 
 	public LandingPage(WebDriver driver, ExtentTest logger) {
 		super(driver, logger);
@@ -49,15 +51,21 @@ public class LandingPage extends pageBaseClass {
 
 	}
 
-	public void enterLoanTerm(String loanPeriod) {
+	public ProductPage enterLoanTerm(String loanPeriod) {
 
 		EMICalculatorPageObjects.loanTerm.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanTerm.sendKeys(Keys.BACK_SPACE);
 		EMICalculatorPageObjects.loanTerm.sendKeys(loanPeriod);
 		logger.log(Status.INFO, "Loan Tenure(in Years) entered into the input box succesfully.");
+		
+		productPage = new ProductPage(driver, logger);
+		PageFactory.initElements(driver, productPage);
+		
+		return productPage;
+		
 	}
 
-	
+/*
 	
 	public void clickEMIInArrears() {
 		EMICalculatorPageObjects.EMIInArrears.click();
@@ -83,6 +91,6 @@ public class LandingPage extends pageBaseClass {
 		String name = WriteResultsToExcel.writeData(principalAmountMonth1, interestAmountMonth1);
 		logger.log(Status.INFO, "Data written in excel sheet- "+name);
 	}
-	
+	*/
 }
 
