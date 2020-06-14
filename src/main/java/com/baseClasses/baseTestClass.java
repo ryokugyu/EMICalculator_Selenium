@@ -1,4 +1,4 @@
-package baseClasses;
+package com.baseClasses;
 
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -16,9 +16,9 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import pageClasses.LandingPage;
-import utilities.ExtentReportManager;
-import utilities.ReadPropertiesFile;
+import com.pageClasses.LandingPage;
+import com.utilities.ExtentReportManager;
+import com.utilities.ReadPropertiesFile;
 
 public class baseTestClass {
 	public WebDriver driver;

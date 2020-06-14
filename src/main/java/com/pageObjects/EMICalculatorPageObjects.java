@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import baseClasses.pageBaseClass;
+import com.baseClasses.pageBaseClass;
 
 public class EMICalculatorPageObjects extends pageBaseClass {
 	

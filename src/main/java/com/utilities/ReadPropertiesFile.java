@@ -1,8 +1,4 @@
-/*
- * Program to read the config.properties file
- * present in the given directory.
- */
-package utilities;
+package com.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

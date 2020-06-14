@@ -1,4 +1,4 @@
-package pageClasses;
+package com.pageClasses;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -7,14 +7,15 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.pageObjects.EMICalculatorPageObjects;
 
-import baseClasses.pageBaseClass;
-import utilities.WriteResultsToExcel;
+import com.baseClasses.pageBaseClass;
+import com.utilities.WriteResultsToExcel;
 
 public class ProductPage extends pageBaseClass {
 	
 	public EMICalculatorPageObjects amountcalculator;
 	
-	ProductPage(WebDriver driver, ExtentTest logger) {
+	public ProductPage(WebDriver driver, ExtentTest logger) {
+		// TODO Auto-generated constructor stub
 		super(driver,logger);
 		
 		amountcalculator = new EMICalculatorPageObjects(driver, logger);

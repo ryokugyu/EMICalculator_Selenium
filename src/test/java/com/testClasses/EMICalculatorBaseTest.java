@@ -1,19 +1,16 @@
 package com.testClasses;
 
 import org.testng.annotations.Test;
-
 import java.util.Hashtable;
 import java.util.Properties;
-
 import org.testng.annotations.DataProvider;
-
 import com.aventstack.extentreports.Status;
 
-import baseClasses.baseTestClass;
-import pageClasses.LandingPage;
-import pageClasses.ProductPage;
-import utilities.ReadPropertiesFile;
-import utilities.TestDataProvider;
+import com.baseClasses.baseTestClass;
+import com.pageClasses.LandingPage;
+import com.pageClasses.ProductPage;
+import com.utilities.ReadPropertiesFile;
+import com.utilities.TestDataProvider;
 
 public class EMICalculatorBaseTest extends baseTestClass {
 	LandingPage landingPage;
