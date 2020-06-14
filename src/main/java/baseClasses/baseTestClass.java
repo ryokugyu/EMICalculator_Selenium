@@ -1,5 +1,6 @@
 package baseClasses;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -17,30 +18,32 @@ import com.aventstack.extentreports.Status;
 
 import pageClasses.LandingPage;
 import utilities.ExtentReportManager;
+import utilities.ReadPropertiesFile;
 
 public class baseTestClass {
 	public WebDriver driver;
 	public ExtentReports report = ExtentReportManager.getReportInstance();
 	public ExtentTest logger;
-
+	Properties prop = ReadPropertiesFile.readConfiguration();
+	
 	/****************** Invoke Browser ***********************/
 	public void invokeBrowser(String browserName) {
 
 		try {
 
 			if (browserName.equalsIgnoreCase("Chrome")) {
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("chromeSrc"));
 				driver = new ChromeDriver();
 			} 
 			else if (browserName.equalsIgnoreCase("Mozilla")) {
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers//geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + prop.getProperty("geckoSrc"));
 				driver = new FirefoxDriver();
 			} else if (browserName.equalsIgnoreCase("Opera")) {
-				System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") + "//drivers//operadriver.exe");
+				System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") + prop.getProperty("operaSrc"));
 				driver = new OperaDriver();
 			} else if (browserName.equalsIgnoreCase("IE")) {
 				System.setProperty("webdriver.ie.driver",
-						System.getProperty("user.dir") + "//drivers//IEDriverServer.exe");
+						System.getProperty("user.dir") + prop.getProperty("ieDriverSrc"));
 				driver = new InternetExplorerDriver();
 			} 
 			else {
