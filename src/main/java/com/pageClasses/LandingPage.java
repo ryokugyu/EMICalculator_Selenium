@@ -1,6 +1,5 @@
 package com.pageClasses;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,14 +29,14 @@ public class LandingPage extends pageBaseClass {
 	
 
 	public void clickCarLoanButton(){
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		try{
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOf(EMICalculatorPageObjects.carLoan));
+			EMICalculatorPageObjects.carLoan.click();
+			logger.log(Status.INFO, "Car Loan Option Selected succesfully");
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
 		}
-		EMICalculatorPageObjects.carLoan.click();
-		logger.log(Status.INFO, "Car Loan Option Selected succesfully");
 	}
 
 	public void enterLoanAmount(String Amount) {

@@ -22,13 +22,6 @@ public class ProductPage extends pageBaseClass {
 		PageFactory.initElements(driver,amountcalculator);
 	}
 
-	public void clickEMIInArrears() {
-		EMICalculatorPageObjects.EMIInArrears.click();
-		logger.log(Status.INFO, "EMI in Arrears Option selected succesfully.");
-	}
-	
-
-
 	public void clickReadMore() {
 		EMICalculatorPageObjects.readMore.click();
 		logger.log(Status.INFO, "ALl details of 2020 displayed succesfully.");

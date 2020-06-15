@@ -33,7 +33,6 @@ public class EMICalculatorBaseTest extends baseTestClass {
 		landingPage.enterLoanInterestRate(testData.get("InterestRate"));
 		
 		productPage = landingPage.enterLoanTerm(testData.get("LoanTenure"));
-		productPage.clickEMIInArrears();
 		productPage.clickReadMore();
 		productPage.fetchTestResult();
 		productPage.writeData();

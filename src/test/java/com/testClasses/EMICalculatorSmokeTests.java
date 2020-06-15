@@ -60,12 +60,7 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 		invokeBrowser(prop.getProperty("browserName"));
 		
 		landingPage = openApplication(prop.getProperty("WebPageURL"));
-		try{
-			landingPage.clickCarLoanButton();
-		} catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
+		landingPage.clickCarLoanButton();
 		landingPage.enterLoanAmount(testData.get("CarLoanAmount"));
 		landingPage.enterLoanInterestRate(testData.get("InterestRate"));
 		landingPage.enterLoanTerm(testData.get("LoanTenure"));
