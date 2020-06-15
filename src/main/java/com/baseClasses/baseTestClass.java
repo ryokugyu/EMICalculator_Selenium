@@ -50,7 +50,7 @@ public class baseTestClass {
 				driver = new SafariDriver();
 			}
 		} catch (Exception e) {
-			// reportFail(e.getMessage());
+			//  reportFail(e.getMessage());
 			System.out.println(e.getMessage());
 		}
 
