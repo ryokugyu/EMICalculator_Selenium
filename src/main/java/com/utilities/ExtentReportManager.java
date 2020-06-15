@@ -24,7 +24,7 @@ public class ExtentReportManager {
 				report.setSystemInfo("Build Number", "10.8.1");
 				report.setSystemInfo("Browser", "Chrome");
 				
-				htmlReporter.config().setDocumentTitle("EMI Amount Results");
+				htmlReporter.config().setDocumentTitle("EMI Calculator Test Results");
 				htmlReporter.config().setReportName("emicalculator.net Test Report");
 				htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 				htmlReporter.config().setTimeStampFormat("MMM dd, yyyy HH:mm:ss");

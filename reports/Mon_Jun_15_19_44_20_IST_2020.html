@@ -15,7 +15,7 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>EMI Amount Results</title>
+	<title>EMI Calculator Test Results</title>
 
 	<style type='text/css'>
 	</style>
@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 14, 2020 14:44:37</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 15, 2020 19:44:20</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -140,7 +141,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>8</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -155,17 +156,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>EMI_Calculator Test</span>
-						<span class='test-time'>Jun 14, 2020 14:44:39</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>EMICalculator web page test</span>
+						<span class='test-time'>Jun 15, 2020 19:44:21</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 14, 2020 14:44:39</span>
-	<span class='label end-time'>Jun 14, 2020 14:44:55</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+283ms</span>
+	<span class='label start-time'>Jun 15, 2020 19:44:21</span>
+	<span class='label end-time'>Jun 15, 2020 19:44:28</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+386ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -179,47 +180,20 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:49 PM</td>
+					<td class='timestamp'>7:44:28 PM</td>
 					<td class='step-details'>Opened url -https://www.emicalculator.net</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:52 PM</td>
-					<td class='step-details'>Car Loan Option Selected succesfully</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:53 PM</td>
-					<td class='step-details'>Loan amount entered into the input box succesfully.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:53 PM</td>
-					<td class='step-details'>Loan interest rate entered into the input box succesfully.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:54 PM</td>
-					<td class='step-details'>Loan Tenure(in Years) entered into the input box succesfully.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:54 PM</td>
-					<td class='step-details'>EMI in Arrears Option selected succesfully.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:54 PM</td>
-					<td class='step-details'>ALl details of 2020 displayed succesfully.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:44:55 PM</td>
-					<td class='step-details'>Data written in excel sheet- Sun_Jun_14_14_44_55_IST_2020.xlsx</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:28 PM</td>
+					<td class='step-details'>expected [Calculator for Home Loan, Car Loan & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='E:\Eclipse Oxygen\EMICalculator/ScreenShots/.png' width='10%' src='E:\Eclipse Oxygen\EMICalculator/ScreenShots/.png' data-src='E:\Eclipse Oxygen\EMICalculator/ScreenShots/.png'></li>
+							</ul>
 					</div>
 				</li>
 			</ul>
@@ -263,25 +237,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 14, 2020 14:44:37</div>
+					<div class='panel-lead'>Jun 15, 2020 19:44:20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 14, 2020 14:44:55</div>
+			 		<div class='panel-lead'>Jun 15, 2020 19:44:29</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 17s+700ms</div>
+					<div class='panel-lead'>0h 0m 8s+617ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -322,22 +296,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
 				passChild: 0,
-				failChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 8,
-				exceptionsChild: 0,
+				infoChild: 1,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

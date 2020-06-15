@@ -10,14 +10,14 @@ import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentTest;
 
-public class TakeScreenshot {
+public class TakeScreenshots {
 	
 	/****************** Capture Screen Shot ***********************/
 	public static void takeScreenShotOnFailure(WebDriver driver, ExtentTest logger) {
 		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
 
-		File destFile = new File(System.getProperty("user.dir") + "//ScreenShots//" + DateUtil.getTimeStamp()+ ".png");
+		File destFile = new File(System.getProperty("user.dir") + "//ScreenShots//" + DateUtil.getTimeStamp() + ".png");
 		try {
 			FileUtils.copyFile(sourceFile, destFile);
 			logger.addScreenCaptureFromPath(System.getProperty("user.dir") + "/ScreenShots/" + ".png");
@@ -27,5 +27,4 @@ public class TakeScreenshot {
 		}
 
 	}
-
 }
