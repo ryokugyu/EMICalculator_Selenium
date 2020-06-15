@@ -1,16 +1,11 @@
 package com.baseClasses;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import org.openqa.selenium.OutputType;
+import com.utilities.TakeScreenshot;
 
 public class pageBaseClass extends baseTestClass {
 
@@ -33,28 +28,12 @@ public class pageBaseClass extends baseTestClass {
 	/****************** Reporting Functions ***********************/
 	public void reportFail(String reportString) {
 		logger.log(Status.FAIL, reportString);
-		takeScreenShotOnFailure();
+		TakeScreenshot.takeScreenShotOnFailure(driver, logger);
 		Assert.fail(reportString);
 	}
+
 
 	public void reportPass(String reportString) {
 		logger.log(Status.PASS, reportString);
 	}
-
-	/****************** Capture Screen Shot ***********************/
-	public void takeScreenShotOnFailure() {
-		TakesScreenshot takeScreenShot = ((TakesScreenshot) driver);
-		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
-
-		File destFile = new File(System.getProperty("user.dir") + "//ScreenShots//GetTitleTestFail.png");
-		try {
-			FileUtils.copyFile(sourceFile, destFile);
-			logger.addScreenCaptureFromPath(System.getProperty("user.dir") + "/ScreenShots/" + ".png");
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}
-
 }
