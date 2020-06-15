@@ -1,8 +1,12 @@
 package com.pageClasses;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -23,8 +27,15 @@ public class LandingPage extends pageBaseClass {
 		amountcalculator = new EMICalculatorPageObjects(driver, logger);
 		PageFactory.initElements(driver, amountcalculator);
 	}
+	
 
-	public void clickCarLoanButton() {
+	public void clickCarLoanButton(){
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		EMICalculatorPageObjects.carLoan.click();
 		logger.log(Status.INFO, "Car Loan Option Selected succesfully");
 	}
@@ -71,5 +82,38 @@ public class LandingPage extends pageBaseClass {
 			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 		}
 	}
-
+	
+	
+	/****************** Verify Element is Present ***********************/
+	
+	public void veriyElementIsDisplayed(WebElement carLoan){
+		try {
+			if(carLoan.isDisplayed()){
+				ReportingFunctions.reportPass("Password Box is Displayed", logger);
+			}else {
+				ReportingFunctions.reportFail("Password box not appeared", driver, logger);
+			}
+			
+		} catch (Exception e) {
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+		}
+		
+	}
+	
+	
+	/****************** Verify Total Payment Amount***********************/
+	public void verifyTotalPaymentAmount(String expectedTotalPaymentAmount) {
+		String amount = EMICalculatorPageObjects.totalPaymentAmount.getText();
+		amount = amount.replaceAll(",", "");
+		amount = amount+".0";
+		System.out.println(amount);
+		try {
+			Assert.assertEquals(amount, expectedTotalPaymentAmount);
+			ReportingFunctions.reportPass("Actual Total Payment Amount : " + amount + " - equals to Expected Total payment amount : " + expectedTotalPaymentAmount, logger);
+		} catch (AssertionError e) {
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+		}
+		
+	}
+	
 }

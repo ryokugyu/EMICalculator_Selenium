@@ -17,7 +17,7 @@ public class EMICalculatorBaseTest extends baseTestClass {
 	ProductPage productPage;
 	
 	@Test(dataProvider="EMICalculatorTestData",description="executes the complete test")
-	public void emicalculator(Hashtable<String, String> testData) {
+	public void emicalculator(Hashtable<String, String> testData) throws InterruptedException {
 		
 		Properties prop = ReadPropertiesFile.readConfiguration();
 		
@@ -27,7 +27,7 @@ public class EMICalculatorBaseTest extends baseTestClass {
 		//initializing the browser
 		invokeBrowser(prop.getProperty("browserName"));
 		
-		landingPage = openApplication(testData.get("WebPageURL"));
+		landingPage = openApplication(prop.getProperty("WebPageURL"));
 		landingPage.clickCarLoanButton();
 		landingPage.enterLoanAmount(testData.get("CarLoanAmount"));
 		landingPage.enterLoanInterestRate(testData.get("InterestRate"));

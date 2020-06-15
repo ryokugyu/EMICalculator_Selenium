@@ -1,62 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12903" started-at="2020-06-15T14:14:21Z" finished-at="2020-06-15T14:14:33Z">
+  <suite name="Default suite" duration-ms="33358" started-at="2020-06-15T17:47:47Z" finished-at="2020-06-15T17:48:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12903" started-at="2020-06-15T14:14:21Z" finished-at="2020-06-15T14:14:33Z">
+    <test name="Default test" duration-ms="33358" started-at="2020-06-15T17:47:47Z" finished-at="2020-06-15T17:48:21Z">
       <class name="com.testClasses.EMICalculatorSmokeTests">
-        <test-method status="FAIL" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="emicalculator" duration-ms="8167" started-at="2020-06-15T14:14:21Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-15T14:14:29Z">
+        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="emicalculator" duration-ms="7472" started-at="2020-06-15T17:47:48Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-15T17:47:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{WebPageURL=https://www.emicalculator.net, title=Calculator for Home Loan, Car Loan & Personal Loan in India}]]>
+                <![CDATA[{title=EMI Calculator for Home Loan, Car Loan & Personal Loan in India}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Calculator for Home Loan, Car Loan & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Calculator for Home Loan, Car Loan & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]
-at org.testng.Assert.fail(Assert.java:96)
-at com.utilities.ReportingFunctions.reportFail(ReportingFunctions.java:16)
-at com.pageClasses.LandingPage.getTitle(LandingPage.java:72)
-at com.testClasses.EMICalculatorSmokeTests.emicalculator(EMICalculatorSmokeTests.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4359" started-at="2020-06-15T14:14:29Z" finished-at="2020-06-15T14:14:33Z">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="634" started-at="2020-06-15T17:47:55Z" finished-at="2020-06-15T17:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isCarLoanElementPresent" duration-ms="6675" started-at="2020-06-15T17:47:56Z" description="verify that CarLoan element is present" finished-at="2020-06-15T17:48:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCarLoanElementPresent -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4582" started-at="2020-06-15T17:48:03Z" finished-at="2020-06-15T17:48:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isTotalPaymentAmountVerify" duration-ms="9444" started-at="2020-06-15T17:48:07Z" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-15T17:48:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LoanTenure=5.0, InterestRate=12.5, expectedTotalAmount=1349876.0, CarLoanAmount=1000000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isTotalPaymentAmountVerify -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4174" started-at="2020-06-15T17:48:17Z" finished-at="2020-06-15T17:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->

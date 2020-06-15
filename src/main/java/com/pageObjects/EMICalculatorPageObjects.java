@@ -15,7 +15,7 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	}
 	
 	//CarLoan WebElement
-	@FindBy(xpath = "//*[@id=\"car-loan\"]/a")
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]")
 	public static WebElement carLoan;
 	
 	//Car loan Amount input WebElement
@@ -45,5 +45,9 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	//Interest amount for first month WebElement
 	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[3]/div[2]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]")
 	public static WebElement interestAmount;
+	
+	//Total Paymnet Amount
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/p[1]/span[1]")
+	public static WebElement totalPaymentAmount;
 
 }

@@ -6,7 +6,7 @@
       <class name="com.testClasses.EMICalculatorSmokeTests">
         <methods>
           <include name="flushReports"/>
-          <include name="emicalculator" invocation-numbers="0"/>
+          <include name="isTotalPaymentAmountVerify" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.testClasses.EMICalculatorSmokeTests -->
     </classes>
