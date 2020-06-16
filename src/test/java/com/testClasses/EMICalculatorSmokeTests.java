@@ -19,8 +19,10 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 	
 	/******************* Page Title Test*******************/
 	@Test(dataProvider="EMICalculatorTestSmokeSuiteDriverTitleData",description="checks the webpage title")
-	public void emicalculator(Hashtable<String, String> testData) {
+	public void verifyPageTitle(Hashtable<String, String> testData) {
 		LandingPage landingPage;
+		
+		System.out.println("******Executing verifyPageTitle Test******");
 		
 		//creating test for logger to record
 		logger = report.createTest("EMICalculator Page title Test");
@@ -38,6 +40,9 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 	@Test(description="verify that CarLoan element is present")
 	public void isCarLoanElementPresent() {
 		LandingPage landingPage;
+		
+		System.out.println("******Executing isCarLoanElementPresent Test******");
+		
 		logger = report.createTest("EMICalculator: Is carLoan Element Present.");
 		
 		invokeBrowser(prop.getProperty("browserName"));
@@ -52,7 +57,7 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 	@Test(dataProvider="EMICalculatorVerifyTotalPaymentAmountData",description="verify that total payment amount is correct")
 	public void isTotalPaymentAmountVerify(Hashtable<String, String> testData) {
 		LandingPage landingPage;
-		
+		System.out.println("******Executing isTotalPaymentAmountVerify Test******");
 		//creating test for logger to record
 		logger = report.createTest("Total Payment Amount Verify Test");
 		

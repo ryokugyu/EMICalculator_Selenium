@@ -20,7 +20,7 @@ public class EMICalculatorBaseTest extends baseTestClass {
 	public void emicalculator(Hashtable<String, String> testData) throws InterruptedException {
 		
 		Properties prop = ReadPropertiesFile.readConfiguration();
-		
+		System.out.println("******Executing EMICalculator Base Test******");
 		//creating test for logger to record
 		logger = report.createTest("EMI_Calculator Test");
 		
