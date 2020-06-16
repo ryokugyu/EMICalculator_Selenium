@@ -2,6 +2,7 @@ package com.pageClasses;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -21,18 +22,27 @@ public class ProductPage extends pageBaseClass {
 		amountcalculator = new EMICalculatorPageObjects(driver, logger);
 		PageFactory.initElements(driver,amountcalculator);
 	}
+	
+	public static String principalAmountMonth1;
+	public static String interestAmountMonth1;
 
 	public void clickReadMore() {
 		EMICalculatorPageObjects.readMore.click();
-		logger.log(Status.INFO, "ALl details of 2020 displayed succesfully.");
+		logger.log(Status.INFO, "All details of 2020 displayed succesfully.");
 	}
-
-	public static String principalAmountMonth1;
-	public static String interestAmountMonth1;
 
 	public void fetchTestResult() {
 		principalAmountMonth1 = EMICalculatorPageObjects.principalAmount.getText();
 		interestAmountMonth1 = EMICalculatorPageObjects.interestAmount.getText();
+	}
+	
+	public void share() {
+		EMICalculatorPageObjects.shareButton.click();
+		logger.log(Status.INFO, "Shared Link button is pressed successfully");
+		String sharelink = EMICalculatorPageObjects.shareLink.getAttribute("value");
+		Assert.assertEquals(sharelink, "https://ecal.in/");
+		logger.log(Status.INFO, "Shared Link is created successfully");
+		
 	}
 
 	public void writeData() {

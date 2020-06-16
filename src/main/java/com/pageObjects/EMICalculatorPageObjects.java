@@ -46,8 +46,15 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[3]/div[2]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]")
 	public static WebElement interestAmount;
 	
-	//Total Paymnet Amount
+	//Total Payment Amount
 	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/p[1]/span[1]")
 	public static WebElement totalPaymentAmount;
-
+	
+	//Share Link
+	@FindBy(xpath="//*[@id='sharelink']")
+	public static WebElement shareLink;
+	
+	//Share Link button
+	@FindBy(xpath="//*[@id='ecalprintandshare']/a[2]")
+	public static WebElement shareButton;
 }

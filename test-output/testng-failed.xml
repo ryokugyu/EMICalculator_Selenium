@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testClasses.EMICalculatorBaseTest">
+      <class name="com.testClasses.EMICalculatorSmokeTests">
         <methods>
-          <include name="emicalculator" invocation-numbers="0"/>
+          <include name="isShareButtonWorking" invocation-numbers="0"/>
           <include name="flushReports"/>
+          <include name="verifyPageTitle"/>
+          <include name="isTotalPaymentAmountVerify"/>
         </methods>
-      </class> <!-- com.testClasses.EMICalculatorBaseTest -->
+      </class> <!-- com.testClasses.EMICalculatorSmokeTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

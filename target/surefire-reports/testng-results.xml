@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="49388" started-at="2020-06-16T15:27:25 IST" finished-at="2020-06-16T15:28:14 IST">
+  <suite name="Suite" duration-ms="50881" started-at="2020-06-16T15:34:23 IST" finished-at="2020-06-16T15:35:14 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="49388" started-at="2020-06-16T15:27:25 IST" finished-at="2020-06-16T15:28:14 IST">
+    <test name="Test" duration-ms="50881" started-at="2020-06-16T15:34:23 IST" finished-at="2020-06-16T15:35:14 IST">
       <class name="com.testClasses.EMICalculatorBaseTest">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6043cd28]" name="emicalculator" duration-ms="8792" started-at="2020-06-16T15:28:02 IST" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-16T15:28:10 IST">
+        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@45820e51]" name="emicalculator" duration-ms="9334" started-at="2020-06-16T15:35:00 IST" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-16T15:35:10 IST">
           <params>
             <param index="0">
               <value>
@@ -18,21 +18,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6043cd28]" name="flushReports" is-config="true" duration-ms="4188" started-at="2020-06-16T15:28:10 IST" finished-at="2020-06-16T15:28:14 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@45820e51]" name="flushReports" is-config="true" duration-ms="4451" started-at="2020-06-16T15:35:10 IST" finished-at="2020-06-16T15:35:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.testClasses.EMICalculatorBaseTest -->
       <class name="com.testClasses.EMICalculatorSmokeTests">
-        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@42d8062c]" name="isCarLoanElementPresent" duration-ms="7589" started-at="2020-06-16T15:27:25 IST" description="verify that CarLoan element is present" finished-at="2020-06-16T15:27:33 IST">
+        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7113b13f]" name="isCarLoanElementPresent" duration-ms="7570" started-at="2020-06-16T15:34:23 IST" description="verify that CarLoan element is present" finished-at="2020-06-16T15:34:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCarLoanElementPresent -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@42d8062c]" name="flushReports" is-config="true" duration-ms="4720" started-at="2020-06-16T15:27:33 IST" finished-at="2020-06-16T15:27:37 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7113b13f]" name="flushReports" is-config="true" duration-ms="4717" started-at="2020-06-16T15:34:31 IST" finished-at="2020-06-16T15:34:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@42d8062c]" name="isTotalPaymentAmountVerify" duration-ms="8306" started-at="2020-06-16T15:27:38 IST" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-16T15:27:46 IST">
+        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7113b13f]" name="isTotalPaymentAmountVerify" duration-ms="8705" started-at="2020-06-16T15:34:36 IST" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-16T15:34:44 IST">
           <params>
             <param index="0">
               <value>
@@ -43,11 +43,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTotalPaymentAmountVerify -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@42d8062c]" name="flushReports" is-config="true" duration-ms="4229" started-at="2020-06-16T15:27:46 IST" finished-at="2020-06-16T15:27:50 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7113b13f]" name="flushReports" is-config="true" duration-ms="4462" started-at="2020-06-16T15:34:44 IST" finished-at="2020-06-16T15:34:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@42d8062c]" name="verifyPageTitle" duration-ms="6890" started-at="2020-06-16T15:27:50 IST" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-16T15:27:57 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7113b13f]" name="verifyPageTitle" duration-ms="6807" started-at="2020-06-16T15:34:49 IST" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-16T15:34:56 IST">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@42d8062c]" name="flushReports" is-config="true" duration-ms="4307" started-at="2020-06-16T15:27:57 IST" finished-at="2020-06-16T15:28:01 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7113b13f]" name="flushReports" is-config="true" duration-ms="4444" started-at="2020-06-16T15:34:56 IST" finished-at="2020-06-16T15:35:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->

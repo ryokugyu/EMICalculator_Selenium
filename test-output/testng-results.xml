@@ -2,12 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48182" started-at="2020-06-15T18:06:26Z" finished-at="2020-06-15T18:07:14Z">
+  <suite name="Default suite" duration-ms="47401" started-at="2020-06-16T17:26:42Z" finished-at="2020-06-16T17:27:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48182" started-at="2020-06-15T18:06:26Z" finished-at="2020-06-15T18:07:14Z">
-      <class name="com.testClasses.EMICalculatorBaseTest">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6ec8211c]" name="emicalculator" duration-ms="9234" started-at="2020-06-15T18:06:26Z" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-15T18:06:36Z">
+    <test name="Default test" duration-ms="47401" started-at="2020-06-16T17:26:42Z" finished-at="2020-06-16T17:27:29Z">
+      <class name="com.testClasses.EMICalculatorSmokeTests">
+        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isCarLoanElementPresent" duration-ms="9301" started-at="2020-06-16T17:26:42Z" description="verify that CarLoan element is present" finished-at="2020-06-16T17:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCarLoanElementPresent -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="490" started-at="2020-06-16T17:26:51Z" finished-at="2020-06-16T17:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isShareButtonWorking" duration-ms="8760" started-at="2020-06-16T17:26:52Z" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-06-16T17:27:01Z">
           <params>
             <param index="0">
               <value>
@@ -17,37 +25,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6ec8211c]" name="flushReports" is-config="true" duration-ms="4360" started-at="2020-06-15T18:06:36Z" finished-at="2020-06-15T18:06:40Z">
+        </test-method> <!-- isShareButtonWorking -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4441" started-at="2020-06-16T17:27:01Z" finished-at="2020-06-16T17:27:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-      </class> <!-- com.testClasses.EMICalculatorBaseTest -->
-      <class name="com.testClasses.EMICalculatorSmokeTests">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7276c8cd]" name="emicalculator" duration-ms="6624" started-at="2020-06-15T18:06:40Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-15T18:06:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=EMI Calculator for Home Loan, Car Loan & Personal Loan in India}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7276c8cd]" name="flushReports" is-config="true" duration-ms="4235" started-at="2020-06-15T18:06:47Z" finished-at="2020-06-15T18:06:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7276c8cd]" name="isCarLoanElementPresent" duration-ms="6633" started-at="2020-06-15T18:06:51Z" description="verify that CarLoan element is present" finished-at="2020-06-15T18:06:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCarLoanElementPresent -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7276c8cd]" name="flushReports" is-config="true" duration-ms="4373" started-at="2020-06-15T18:06:58Z" finished-at="2020-06-15T18:07:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7276c8cd]" name="isTotalPaymentAmountVerify" duration-ms="8154" started-at="2020-06-15T18:07:02Z" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-15T18:07:10Z">
+        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isTotalPaymentAmountVerify" duration-ms="8183" started-at="2020-06-16T17:27:05Z" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-16T17:27:13Z">
           <params>
             <param index="0">
               <value>
@@ -58,7 +41,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTotalPaymentAmountVerify -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@7276c8cd]" name="flushReports" is-config="true" duration-ms="4191" started-at="2020-06-15T18:07:10Z" finished-at="2020-06-15T18:07:14Z">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4471" started-at="2020-06-16T17:27:13Z" finished-at="2020-06-16T17:27:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="verifyPageTitle" duration-ms="7002" started-at="2020-06-16T17:27:18Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-16T17:27:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{title=EMI Calculator for Home Loan, Car Loan & Personal Loan in India}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4286" started-at="2020-06-16T17:27:25Z" finished-at="2020-06-16T17:27:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
