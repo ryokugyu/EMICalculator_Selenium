@@ -3,6 +3,7 @@ package com.pageClasses;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,19 +27,20 @@ public class LandingPage extends pageBaseClass {
 		amountcalculator = new EMICalculatorPageObjects(driver, logger);
 		PageFactory.initElements(driver, amountcalculator);
 	}
-	
 
-	public void clickCarLoanButton(){
-		try{
+	/******************* Select Car Loan option*******************/
+	public void clickCarLoanButton() {
+		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.visibilityOf(EMICalculatorPageObjects.carLoan));
 			EMICalculatorPageObjects.carLoan.click();
 			logger.log(Status.INFO, "Car Loan Option Selected succesfully");
-		}catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
 
+	/******************* Input the Loan Amount*******************/
 	public void enterLoanAmount(String Amount) {
 		EMICalculatorPageObjects.loanAmount.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanAmount.sendKeys(Keys.BACK_SPACE);
@@ -47,8 +49,8 @@ public class LandingPage extends pageBaseClass {
 		logger.log(Status.INFO, "Loan amount entered into the input box succesfully.");
 	}
 
+	/******************* Input the Loan Interest Rate*******************/
 	public void enterLoanInterestRate(String interestRate) {
-
 		EMICalculatorPageObjects.loanInterest.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanInterest.sendKeys(Keys.BACK_SPACE);
 		EMICalculatorPageObjects.loanInterest.sendKeys(interestRate);
@@ -57,8 +59,8 @@ public class LandingPage extends pageBaseClass {
 
 	}
 
+	/******************* Input the Loan Period(in years)*******************/
 	public ProductPage enterLoanTerm(String loanPeriod) {
-
 		EMICalculatorPageObjects.loanTerm.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanTerm.sendKeys(Keys.BACK_SPACE);
 		EMICalculatorPageObjects.loanTerm.sendKeys(loanPeriod);
@@ -81,38 +83,45 @@ public class LandingPage extends pageBaseClass {
 			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 		}
 	}
-	
-	
+
 	/****************** Verify Element is Present ***********************/
-	
-	public void veriyElementIsDisplayed(WebElement carLoan){
+	public void veriyElementIsDisplayed(WebElement carLoan) {
 		try {
-			if(carLoan.isDisplayed()){
+			if (carLoan.isDisplayed()) {
 				ReportingFunctions.reportPass("Password Box is Displayed", logger);
-			}else {
+			} else {
 				ReportingFunctions.reportFail("Password box not appeared", driver, logger);
 			}
-			
+
 		} catch (Exception e) {
 			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 		}
-		
+
 	}
-	
-	
-	/****************** Verify Total Payment Amount***********************/
+
+	/****************** Verify Total Payment Amount ***********************/
 	public void verifyTotalPaymentAmount(String expectedTotalPaymentAmount) {
 		String amount = EMICalculatorPageObjects.totalPaymentAmount.getText();
 		amount = amount.replaceAll(",", "");
-		amount = amount+".0";
+		amount = amount + ".0";
 		System.out.println(amount);
 		try {
 			Assert.assertEquals(amount, expectedTotalPaymentAmount);
-			ReportingFunctions.reportPass("Actual Total Payment Amount : " + amount + " - equals to Expected Total payment amount : " + expectedTotalPaymentAmount, logger);
+			ReportingFunctions.reportPass("Actual Total Payment Amount : " + amount
+					+ " - equals to Expected Total payment amount : " + expectedTotalPaymentAmount, logger);
 		} catch (AssertionError e) {
 			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 		}
-		
+
 	}
-	
+
+	/***************** Verify Loan Tenure in Months button *********************/
+	public void verifyLoanTenureMonth() {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(EMICalculatorPageObjects.monthButton).click().perform();
+		logger.log(Status.INFO, "Month radio button clicked succesfully");
+		String firstmonth = EMICalculatorPageObjects.firstMonth.getText();
+		Assert.assertEquals(firstmonth, "12");
+	}
+
 }

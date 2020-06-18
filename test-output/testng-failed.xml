@@ -5,10 +5,8 @@
     <classes>
       <class name="com.testClasses.EMICalculatorSmokeTests">
         <methods>
-          <include name="isShareButtonWorking" invocation-numbers="0"/>
           <include name="flushReports"/>
-          <include name="verifyPageTitle"/>
-          <include name="isTotalPaymentAmountVerify"/>
+          <include name="emicalculator" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.testClasses.EMICalculatorSmokeTests -->
     </classes>

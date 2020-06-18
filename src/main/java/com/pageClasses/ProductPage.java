@@ -26,16 +26,19 @@ public class ProductPage extends pageBaseClass {
 	public static String principalAmountMonth1;
 	public static String interestAmountMonth1;
 
+	/******************* Selects Read More option *******************/
 	public void clickReadMore() {
 		EMICalculatorPageObjects.readMore.click();
 		logger.log(Status.INFO, "All details of 2020 displayed succesfully.");
 	}
 
+	/******************* Stores Principal Amount and Interest Amount of first month *******************/
 	public void fetchTestResult() {
 		principalAmountMonth1 = EMICalculatorPageObjects.principalAmount.getText();
 		interestAmountMonth1 = EMICalculatorPageObjects.interestAmount.getText();
 	}
 	
+	/******************* Verify share button functionality *******************/
 	public void share() {
 		EMICalculatorPageObjects.shareButton.click();
 		logger.log(Status.INFO, "Shared Link button is pressed successfully");
@@ -45,6 +48,7 @@ public class ProductPage extends pageBaseClass {
 		
 	}
 
+	/******************* Write data into excel file*******************/
 	public void writeData() {
 		String name = WriteResultsToExcel.writeData(principalAmountMonth1, interestAmountMonth1);
 		logger.log(Status.INFO, "Data written in excel sheet- "+name);

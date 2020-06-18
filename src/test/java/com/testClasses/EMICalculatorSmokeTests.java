@@ -99,6 +99,26 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 		
 	}
 	
+	@Test(dataProvider="EMICalculatorTestData",description="verify month button functionality ")
+	public void emicalculator(Hashtable<String, String> testData) {
+		LandingPage landingPage;
+		
+		//creating test for logger to record
+		logger = report.createTest("EMI_Calculator Fourth Test");
+		
+		//initializing the browser
+		invokeBrowser(prop.getProperty("browserName"));
+		
+		landingPage = openApplication(prop.getProperty("WebPageURL"));
+		landingPage.clickCarLoanButton();
+		landingPage.enterLoanAmount(testData.get("CarLoanAmount"));
+		landingPage.enterLoanInterestRate(testData.get("InterestRate"));
+		landingPage.verifyLoanTenureMonth();
+		
+		logger.log(Status.PASS, "EMI Calculator Fourth Test Pass");
+	}
+	
+	
 	
 	@DataProvider
 	public Object[][] EMICalculatorTestSmokeSuiteDriverTitleData(){
