@@ -117,11 +117,13 @@ public class LandingPage extends pageBaseClass {
 
 	/***************** Verify Loan Tenure in Months button *********************/
 	public void verifyLoanTenureMonth() {
+		pageBaseClass p = new pageBaseClass(driver, logger);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(EMICalculatorPageObjects.monthButton).click().perform();
 		logger.log(Status.INFO, "Month radio button clicked succesfully");
-		String firstmonth = EMICalculatorPageObjects.firstMonth.getText();
-		Assert.assertEquals(firstmonth, "12");
+		p.waitForPageLoad();
+		String months = EMICalculatorPageObjects.loanTerm.getText();
+		Assert.assertEquals(months, "");
 	}
 
 	public void verifyCarLoanAmountInput(String expectedTotalPaymentAmount) {

@@ -100,7 +100,11 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 
 	}
 
-	@Test(dataProvider = "EMICalculatorTestData", description = "verify month button functionality ")
+	/*******************
+	 * Verifying the functionality of Month option
+	 *******************/
+	
+	@Test(dataProvider = "EMICalculatorVerifyMonthButtonTestData", description = "verify month button functionality ")
 	public void verifyMonthButton(Hashtable<String, String> testData) {
 		LandingPage landingPage;
 
@@ -114,12 +118,15 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 		landingPage.clickCarLoanButton();
 		landingPage.enterLoanAmount(testData.get("CarLoanAmount"));
 		landingPage.enterLoanInterestRate(testData.get("InterestRate"));
+		landingPage.enterLoanTerm(testData.get("LoanTenure"));
 		landingPage.verifyLoanTenureMonth();
-
-		logger.log(Status.PASS, "EMI Calculator Fourth Test Pass");
+		logger.log(Status.PASS, "EMI Calculator verify Month button Test Pass");
 	}
+	
 
-	// Main test to check what will happen if we enter wrong information
+	/*******************
+	 * Verifying input text behavior when invalid input is provided
+	 *******************/
 	@Test(dataProvider = "EMICalculatorVerifyIncorrectValuesBehaviour", description = "valid input test")
 	public void verifyDataCredibility(Hashtable<String, String> testData) throws InterruptedException {
 		LandingPage landingPage;
@@ -161,4 +168,8 @@ public class EMICalculatorSmokeTests extends baseTestClass {
 		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "emiCalculator");
 	}
 
+	@DataProvider
+	public Object[][] EMICalculatorVerifyMonthButtonTestData() {
+		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "verifyMonthButton");
+	}
 }
