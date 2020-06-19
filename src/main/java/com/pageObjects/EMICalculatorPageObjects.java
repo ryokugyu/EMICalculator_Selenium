@@ -65,4 +65,8 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	// First Month
 	@FindBy(xpath = "//*[@id=\"loantermsteps\"]/span[2]/span")
 	public static WebElement firstMonth;
+
+	// Home Loan Element
+	@FindBy(xpath = "//*[@id=\"home-loan\"]/a")
+	public static WebElement homeLoan;
 }

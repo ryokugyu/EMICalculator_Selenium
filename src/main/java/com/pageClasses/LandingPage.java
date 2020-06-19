@@ -28,7 +28,7 @@ public class LandingPage extends pageBaseClass {
 		PageFactory.initElements(driver, amountcalculator);
 	}
 
-	/******************* Select Car Loan option*******************/
+	/******************* Select Car Loan option *******************/
 	public void clickCarLoanButton() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -40,7 +40,7 @@ public class LandingPage extends pageBaseClass {
 		}
 	}
 
-	/******************* Input the Loan Amount*******************/
+	/******************* Input the Loan Amount *******************/
 	public void enterLoanAmount(String Amount) {
 		EMICalculatorPageObjects.loanAmount.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanAmount.sendKeys(Keys.BACK_SPACE);
@@ -49,7 +49,7 @@ public class LandingPage extends pageBaseClass {
 		logger.log(Status.INFO, "Loan amount entered into the input box succesfully.");
 	}
 
-	/******************* Input the Loan Interest Rate*******************/
+	/******************* Input the Loan Interest Rate *******************/
 	public void enterLoanInterestRate(String interestRate) {
 		EMICalculatorPageObjects.loanInterest.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanInterest.sendKeys(Keys.BACK_SPACE);
@@ -59,7 +59,7 @@ public class LandingPage extends pageBaseClass {
 
 	}
 
-	/******************* Input the Loan Period(in years)*******************/
+	/******************* Input the Loan Period(in years) *******************/
 	public ProductPage enterLoanTerm(String loanPeriod) {
 		EMICalculatorPageObjects.loanTerm.sendKeys(Keys.chord(Keys.CONTROL, "a"));
 		EMICalculatorPageObjects.loanTerm.sendKeys(Keys.BACK_SPACE);
@@ -88,9 +88,9 @@ public class LandingPage extends pageBaseClass {
 	public void veriyElementIsDisplayed(WebElement carLoan) {
 		try {
 			if (carLoan.isDisplayed()) {
-				ReportingFunctions.reportPass("Password Box is Displayed", logger);
+				ReportingFunctions.reportPass("Car Loan Button is Displayed", logger);
 			} else {
-				ReportingFunctions.reportFail("Password box not appeared", driver, logger);
+				ReportingFunctions.reportFail("Car Loan Button not appeared", driver, logger);
 			}
 
 		} catch (Exception e) {
@@ -124,4 +124,45 @@ public class LandingPage extends pageBaseClass {
 		Assert.assertEquals(firstmonth, "12");
 	}
 
+	public void verifyCarLoanAmountInput(String expectedTotalPaymentAmount) {
+		String amount = EMICalculatorPageObjects.totalPaymentAmount.getText();
+		amount = amount.replaceAll(",", "");
+		amount = amount + ".0";
+		try {
+			Assert.assertEquals(amount, expectedTotalPaymentAmount);
+			ReportingFunctions.reportPass("Actual Total Payment Amount : " + amount
+					+ " - equals to Expected Total payment amount : " + expectedTotalPaymentAmount, logger);
+		} catch (AssertionError e) {
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+		}
+	}
+
+	public void defaultValues() {
+		String carLoanAmount = EMICalculatorPageObjects.loanAmount.getText();
+		String interestRate = EMICalculatorPageObjects.interestAmount.getText();
+		String loanTenure = EMICalculatorPageObjects.loanTerm.getText();
+		try {
+			try {
+				Assert.assertEquals(carLoanAmount, "");
+				logger.log(Status.INFO, "Invalid value of Car Loan Amount converted to Default mentioned value");
+			} catch (AssertionError e) {
+				ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+			}
+			try {
+				Assert.assertEquals(interestRate, "");
+				logger.log(Status.INFO, "Invalid value of Interest Rate converted to Default mentioned value");
+			} catch (AssertionError e) {
+				ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+			}
+			try {
+				Assert.assertEquals(loanTenure, "");
+				logger.log(Status.INFO, "Invalid value of Loan Tenure converted to Default mentioned value");
+			} catch (AssertionError e) {
+				ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+			}
+		} catch (Exception e) {
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+		}
+
+	}
 }
