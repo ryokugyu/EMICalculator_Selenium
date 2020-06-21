@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.testClasses.EMICalculatorSmokeTests"/>
-      <class name="com.testClasses.EMICalculatorBaseTest"/>
-    </classes>
+    <packages>
+      <package name="com.testClasses"/>
+      <package name="com.SmokeTestSuiteCLass"/>
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,81 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74962" started-at="2020-06-19T14:01:06Z" finished-at="2020-06-19T14:02:21Z">
+  <suite name="Suite" duration-ms="74382" started-at="2020-06-21T09:01:05Z" finished-at="2020-06-21T09:02:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74962" started-at="2020-06-19T14:01:06Z" finished-at="2020-06-19T14:02:21Z">
-      <class name="com.testClasses.EMICalculatorSmokeTests">
-        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isCarLoanElementPresent" duration-ms="7262" started-at="2020-06-19T14:01:06Z" description="verify that CarLoan element is present" finished-at="2020-06-19T14:01:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCarLoanElementPresent -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4519" started-at="2020-06-19T14:01:14Z" finished-at="2020-06-19T14:01:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isShareButtonWorking" duration-ms="8183" started-at="2020-06-19T14:01:18Z" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-06-19T14:01:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=1.0, InterestRate=9.5, CarLoanAmount=1500000.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isShareButtonWorking -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4219" started-at="2020-06-19T14:01:27Z" finished-at="2020-06-19T14:01:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="isTotalPaymentAmountVerify" duration-ms="7896" started-at="2020-06-19T14:01:31Z" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-19T14:01:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=5.0, InterestRate=12.5, expectedTotalAmount=1349876.0, CarLoanAmount=1000000.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isTotalPaymentAmountVerify -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4201" started-at="2020-06-19T14:01:39Z" finished-at="2020-06-19T14:01:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="verifyDataCredibility" duration-ms="8125" started-at="2020-06-19T14:01:43Z" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-06-19T14:01:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=qwerty, InterestRate=qwerty, CarLoanAmount=qwerty}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDataCredibility -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4185" started-at="2020-06-19T14:01:51Z" finished-at="2020-06-19T14:01:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="verifyMonthButton(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="verifyMonthButton" duration-ms="10251" started-at="2020-06-19T14:01:55Z" description="verify month button functionality " data-provider="EMICalculatorVerifyMonthButtonTestData" finished-at="2020-06-19T14:02:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=5.0, InterestRate=10.0, CarLoanAmount=2500000.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMonthButton -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4443" started-at="2020-06-19T14:02:06Z" finished-at="2020-06-19T14:02:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="verifyPageTitle" duration-ms="6482" started-at="2020-06-19T14:02:10Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-19T14:02:16Z">
+    <test name="Test" duration-ms="74382" started-at="2020-06-21T09:01:05Z" finished-at="2020-06-21T09:02:20Z">
+      <class name="com.SmokeTestSuiteCLass.VerifyPageTitle">
+        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@954b04f]" name="verifyPageTitle" duration-ms="6271" started-at="2020-06-21T09:02:13Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-21T09:02:20Z">
           <params>
             <param index="0">
               <value>
@@ -86,11 +18,106 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorSmokeTests@25bbf683]" name="flushReports" is-config="true" duration-ms="4745" started-at="2020-06-19T14:02:16Z" finished-at="2020-06-19T14:02:21Z">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@954b04f]" name="flushReports" is-config="true" duration-ms="204" started-at="2020-06-21T09:02:20Z" finished-at="2020-06-21T09:02:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-      </class> <!-- com.testClasses.EMICalculatorSmokeTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.SmokeTestSuiteCLass.VerifyPageTitle -->
+      <class name="com.SmokeTestSuiteCLass.IsCarLoanElementPresent">
+        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@67b467e9]" name="isCarLoanElementPresent" duration-ms="6895" started-at="2020-06-21T09:01:27Z" description="verify that CarLoan element is present" finished-at="2020-06-21T09:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCarLoanElementPresent -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@67b467e9]" name="flushReports" is-config="true" duration-ms="145" started-at="2020-06-21T09:01:34Z" finished-at="2020-06-21T09:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.SmokeTestSuiteCLass.IsCarLoanElementPresent -->
+      <class name="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify">
+        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@5c072e3f]" name="isTotalPaymentAmountVerify" duration-ms="7651" started-at="2020-06-21T09:01:47Z" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-21T09:01:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LoanTenure=5.0, InterestRate=12.5, expectedTotalAmount=1349876.0, CarLoanAmount=1000000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isTotalPaymentAmountVerify -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@5c072e3f]" name="flushReports" is-config="true" duration-ms="4467" started-at="2020-06-21T09:01:54Z" finished-at="2020-06-21T09:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.SmokeTestSuiteCLass.TotalPaymentAmountVerify -->
+      <class name="com.testClasses.EMICalculatorBaseTest">
+        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6eceb130]" name="emicalculator" duration-ms="8731" started-at="2020-06-21T09:01:06Z" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-21T09:01:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LoanTenure=1.0, InterestRate=9.5, CarLoanAmount=1500000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emicalculator -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6eceb130]" name="flushReports" is-config="true" duration-ms="4595" started-at="2020-06-21T09:01:14Z" finished-at="2020-06-21T09:01:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.testClasses.EMICalculatorBaseTest -->
+      <class name="com.SmokeTestSuiteCLass.VerifyMonthButton">
+        <test-method status="PASS" signature="verifyMonthButton(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyMonthButton@4d1b0d2a]" name="verifyMonthButton" duration-ms="9957" started-at="2020-06-21T09:01:59Z" description="verify month button functionality " data-provider="EMICalculatorVerifyMonthButtonTestData" finished-at="2020-06-21T09:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LoanTenure=5.0, InterestRate=10.0, CarLoanAmount=2500000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMonthButton -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyMonthButton@4d1b0d2a]" name="flushReports" is-config="true" duration-ms="4432" started-at="2020-06-21T09:02:09Z" finished-at="2020-06-21T09:02:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.SmokeTestSuiteCLass.VerifyMonthButton -->
+      <class name="com.SmokeTestSuiteCLass.IsShareButtonWorking">
+        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@47db50c5]" name="isShareButtonWorking" duration-ms="8049" started-at="2020-06-21T09:01:34Z" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-06-21T09:01:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LoanTenure=1.0, InterestRate=9.5, CarLoanAmount=1500000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isShareButtonWorking -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@47db50c5]" name="flushReports" is-config="true" duration-ms="4439" started-at="2020-06-21T09:01:42Z" finished-at="2020-06-21T09:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.SmokeTestSuiteCLass.IsShareButtonWorking -->
+      <class name="com.SmokeTestSuiteCLass.InvalidValueBehaviour">
+        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@10a035a0]" name="verifyDataCredibility" duration-ms="7982" started-at="2020-06-21T09:01:19Z" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-06-21T09:01:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LoanTenure=qwerty, InterestRate=qwerty, CarLoanAmount=qwerty}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDataCredibility -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@10a035a0]" name="flushReports" is-config="true" duration-ms="138" started-at="2020-06-21T09:01:27Z" finished-at="2020-06-21T09:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.SmokeTestSuiteCLass.InvalidValueBehaviour -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
