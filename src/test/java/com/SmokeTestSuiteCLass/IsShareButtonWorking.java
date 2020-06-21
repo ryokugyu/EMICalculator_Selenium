@@ -43,7 +43,7 @@ public class IsShareButtonWorking extends baseTestClass {
 
 	@DataProvider
 	public Object[][] EMICalculatorTestData() {
-		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "emiCalculator");
+		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "SmokeSuiteTestData", "emiCalculator");
 	}
 
 }

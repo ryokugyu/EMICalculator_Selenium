@@ -42,7 +42,7 @@ public class InvalidValueBehaviour extends baseTestClass {
 
 	@DataProvider
 	public Object[][] EMICalculatorVerifyIncorrectValuesBehaviour() {
-		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "verifyDataValues");
+		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "SmokeSuiteTestData", "verifyDataValues");
 	}
 
 }

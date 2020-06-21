@@ -41,7 +41,7 @@ public class TotalPaymentAmountVerify extends baseTestClass {
 
 	@DataProvider
 	public Object[][] EMICalculatorVerifyTotalPaymentAmountData() {
-		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "totalPaymentAmountVerify");
+		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "SmokeSuiteTestData", "totalPaymentAmountVerify");
 	}
 
 }

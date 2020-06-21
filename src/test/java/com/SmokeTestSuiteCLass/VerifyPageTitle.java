@@ -36,6 +36,6 @@ public class VerifyPageTitle extends baseTestClass {
 	
 	@DataProvider
 	public Object[][] EMICalculatorTestSmokeSuiteDriverTitleData() {
-		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "driverTitleTestData");
+		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "SmokeSuiteTestData", "driverTitleTestData");
 	}
 }

@@ -40,6 +40,6 @@ public class VerifyMonthButton extends baseTestClass {
 
 	@DataProvider
 	public Object[][] EMICalculatorVerifyMonthButtonTestData() {
-		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "LoanDetails", "verifyMonthButton");
+		return TestDataProvider.getTestData("EMICalculatorTestData.xlsx", "SmokeSuiteTestData", "verifyMonthButton");
 	}
 }
