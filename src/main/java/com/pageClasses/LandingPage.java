@@ -1,5 +1,9 @@
 package com.pageClasses;
 
+//import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -104,7 +108,6 @@ public class LandingPage extends pageBaseClass {
 		String amount = EMICalculatorPageObjects.totalPaymentAmount.getText();
 		amount = amount.replaceAll(",", "");
 		amount = amount + ".0";
-		System.out.println(amount);
 		try {
 			Assert.assertEquals(amount, expectedTotalPaymentAmount);
 			ReportingFunctions.reportPass("Actual Total Payment Amount : " + amount
@@ -115,17 +118,9 @@ public class LandingPage extends pageBaseClass {
 
 	}
 
-	/***************** Verify Loan Tenure in Months button *********************/
-	public void verifyLoanTenureMonth() {
-		pageBaseClass p = new pageBaseClass(driver, logger);
-		Actions actions = new Actions(driver);
-		actions.moveToElement(EMICalculatorPageObjects.monthButton).click().perform();
-		logger.log(Status.INFO, "Month radio button clicked succesfully");
-		p.waitForPageLoad();
-		String months = EMICalculatorPageObjects.loanTerm.getText();
-		Assert.assertEquals(months, "");
-	}
-
+	/*****************
+	 * Verify Total payment amount for the loan
+	 *********************/
 	public void verifyCarLoanAmountInput(String expectedTotalPaymentAmount) {
 		String amount = EMICalculatorPageObjects.totalPaymentAmount.getText();
 		amount = amount.replaceAll(",", "");

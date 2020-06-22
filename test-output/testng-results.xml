@@ -1,74 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="73473" started-at="2020-06-21T09:16:40Z" finished-at="2020-06-21T09:17:54Z">
+  <suite name="Default suite" duration-ms="23341" started-at="2020-06-22T04:33:10Z" finished-at="2020-06-22T04:33:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="73473" started-at="2020-06-21T09:16:40Z" finished-at="2020-06-21T09:17:54Z">
-      <class name="com.SmokeTestSuiteCLass.VerifyPageTitle">
-        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@954b04f]" name="verifyPageTitle" duration-ms="6169" started-at="2020-06-21T09:17:48Z" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-06-21T09:17:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=EMI Calculator for Home Loan, Car Loan & Personal Loan in India}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@954b04f]" name="flushReports" is-config="true" duration-ms="218" started-at="2020-06-21T09:17:54Z" finished-at="2020-06-21T09:17:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.SmokeTestSuiteCLass.VerifyPageTitle -->
-      <class name="com.SmokeTestSuiteCLass.IsCarLoanElementPresent">
-        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@67b467e9]" name="isCarLoanElementPresent" duration-ms="6337" started-at="2020-06-21T09:17:02Z" description="verify that CarLoan element is present" finished-at="2020-06-21T09:17:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCarLoanElementPresent -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@67b467e9]" name="flushReports" is-config="true" duration-ms="97" started-at="2020-06-21T09:17:08Z" finished-at="2020-06-21T09:17:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.SmokeTestSuiteCLass.IsCarLoanElementPresent -->
-      <class name="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify">
-        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@5c072e3f]" name="isTotalPaymentAmountVerify" duration-ms="7710" started-at="2020-06-21T09:17:21Z" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-06-21T09:17:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=5.0, InterestRate=12.5, expectedTotalAmount=1349876.0, CarLoanAmount=1000000.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isTotalPaymentAmountVerify -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@5c072e3f]" name="flushReports" is-config="true" duration-ms="4445" started-at="2020-06-21T09:17:29Z" finished-at="2020-06-21T09:17:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.SmokeTestSuiteCLass.TotalPaymentAmountVerify -->
-      <class name="com.testClasses.EMICalculatorBaseTest">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6eceb130]" name="emicalculator" duration-ms="8771" started-at="2020-06-21T09:16:41Z" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-06-21T09:16:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=1.0, InterestRate=9.5, CarLoanAmount=1500000.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6eceb130]" name="flushReports" is-config="true" duration-ms="4363" started-at="2020-06-21T09:16:50Z" finished-at="2020-06-21T09:16:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.testClasses.EMICalculatorBaseTest -->
+    <test name="Default test" duration-ms="23341" started-at="2020-06-22T04:33:10Z" finished-at="2020-06-22T04:33:34Z">
       <class name="com.SmokeTestSuiteCLass.VerifyMonthButton">
-        <test-method status="PASS" signature="verifyMonthButton(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyMonthButton@4d1b0d2a]" name="verifyMonthButton" duration-ms="10011" started-at="2020-06-21T09:17:33Z" description="verify month button functionality " data-provider="EMICalculatorVerifyMonthButtonTestData" finished-at="2020-06-21T09:17:43Z">
+        <test-method status="FAIL" signature="verifyMonthButton(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyMonthButton@25bbf683]" name="verifyMonthButton" duration-ms="18435" started-at="2020-06-22T04:33:11Z" description="verify month button functionality " data-provider="EMICalculatorVerifyMonthButtonTestData" finished-at="2020-06-22T04:33:29Z">
           <params>
             <param index="0">
               <value>
@@ -76,48 +15,83 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LHE3BOF', ip: '192.168.3.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\hnail\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 597a7d961186b5116f5b25068943105b
+*** Element info: {Using=xpath, value=//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LHE3BOF', ip: '192.168.3.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\hnail\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 597a7d961186b5116f5b25068943105b
+*** Element info: {Using=xpath, value=//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.getAttribute(Unknown Source)
+at com.pageClasses.LandingPage.verifyLoanTenureMonth(LandingPage.java:139)
+at com.SmokeTestSuiteCLass.VerifyMonthButton.verifyMonthButton(VerifyMonthButton.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMonthButton -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyMonthButton@4d1b0d2a]" name="flushReports" is-config="true" duration-ms="4437" started-at="2020-06-21T09:17:43Z" finished-at="2020-06-21T09:17:48Z">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyMonthButton@25bbf683]" name="flushReports" is-config="true" duration-ms="4576" started-at="2020-06-22T04:33:29Z" finished-at="2020-06-22T04:33:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.VerifyMonthButton -->
-      <class name="com.SmokeTestSuiteCLass.IsShareButtonWorking">
-        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@47db50c5]" name="isShareButtonWorking" duration-ms="8082" started-at="2020-06-21T09:17:08Z" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-06-21T09:17:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=1.0, InterestRate=9.5, CarLoanAmount=1500000.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isShareButtonWorking -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@47db50c5]" name="flushReports" is-config="true" duration-ms="4439" started-at="2020-06-21T09:17:16Z" finished-at="2020-06-21T09:17:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.SmokeTestSuiteCLass.IsShareButtonWorking -->
-      <class name="com.SmokeTestSuiteCLass.InvalidValueBehaviour">
-        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@10a035a0]" name="verifyDataCredibility" duration-ms="7830" started-at="2020-06-21T09:16:54Z" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-06-21T09:17:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LoanTenure=qwerty, InterestRate=qwerty, CarLoanAmount=qwerty}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDataCredibility -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@10a035a0]" name="flushReports" is-config="true" duration-ms="99" started-at="2020-06-21T09:17:02Z" finished-at="2020-06-21T09:17:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReports -->
-      </class> <!-- com.SmokeTestSuiteCLass.InvalidValueBehaviour -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

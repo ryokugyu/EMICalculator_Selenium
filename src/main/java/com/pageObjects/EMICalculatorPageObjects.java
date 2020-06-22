@@ -59,7 +59,7 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	public static WebElement shareButton;
 
 	// Loan Tenure in-term of Months
-	@FindBy(xpath = "//*[@id=\"loanmonths\"]")
+	@FindBy(xpath = "//div[@class='sep row form-group lterm']//label[2]")
 	public static WebElement monthButton;
 
 	// First Month
@@ -69,4 +69,17 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	// Home Loan Element
 	@FindBy(xpath = "//*[@id=\"home-loan\"]/a")
 	public static WebElement homeLoan;
+	
+	//Slider element
+	@FindBy(xpath="//div[@id='loantermslider']//div[@class='ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min']")
+	public static WebElement slider;
+	
+	@FindBy(xpath="//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']")
+	public static WebElement hiddenSlider;
+	
+	//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']
+	
+	//@FindBy(xpath= "//div[@class='sep row form-group lterm']//label[2]")
+	//public static WebElement monthButton;
+
 }
