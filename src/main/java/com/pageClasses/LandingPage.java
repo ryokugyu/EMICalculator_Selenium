@@ -112,6 +112,7 @@ public class LandingPage extends pageBaseClass {
 		}
 
 	}
+
 	/*****************
 	 * Verify Total payment amount for the loan
 	 *********************/
@@ -128,6 +129,9 @@ public class LandingPage extends pageBaseClass {
 		}
 	}
 
+	/*****************
+	 * Verifying response when syntactical data entered
+	 *********************/
 	public void defaultValues() {
 		String carLoanAmount = EMICalculatorPageObjects.loanAmount.getText();
 		String interestRate = EMICalculatorPageObjects.interestAmount.getText();
@@ -154,27 +158,6 @@ public class LandingPage extends pageBaseClass {
 		} catch (Exception e) {
 			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 		}
-	}
-	
-	public void isCarLoanFAQPagePresent() {
-		try{
-			EMICalculatorPageObjects.FAQs.click();
-			logger.log(Status.INFO, "FAQ button clicked.");
-			
-			WebDriverWait wait = new WebDriverWait(driver, 20);
-			wait.until(ExpectedConditions.visibilityOf(EMICalculatorPageObjects.CarFAQs));
-			EMICalculatorPageObjects.CarFAQs.click();
-			logger.log(Status.INFO, "Car Loan FAQ button clicked successfully.");
-			
-			Assert.assertEquals(EMICalculatorPageObjects.CarLoanFAQTitleText.getText(), "Car Loan FAQ");
-			ReportingFunctions.reportPass("Car Loan FAQ page exists.", logger);
-			
-		} catch(Exception e) {
-			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
-		}
-		
-		
-			
-		
+
 	}
 }
