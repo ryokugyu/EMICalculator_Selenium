@@ -1,13 +1,8 @@
 package com.pageClasses;
 
-//import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -117,7 +112,6 @@ public class LandingPage extends pageBaseClass {
 		}
 
 	}
-
 	/*****************
 	 * Verify Total payment amount for the loan
 	 *********************/
@@ -160,6 +154,27 @@ public class LandingPage extends pageBaseClass {
 		} catch (Exception e) {
 			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 		}
-
+	}
+	
+	public void isCarLoanFAQPagePresent() {
+		try{
+			EMICalculatorPageObjects.FAQs.click();
+			logger.log(Status.INFO, "FAQ button clicked.");
+			
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOf(EMICalculatorPageObjects.CarFAQs));
+			EMICalculatorPageObjects.CarFAQs.click();
+			logger.log(Status.INFO, "Car Loan FAQ button clicked successfully.");
+			
+			Assert.assertEquals(EMICalculatorPageObjects.CarLoanFAQTitleText.getText(), "Car Loan FAQ");
+			ReportingFunctions.reportPass("Car Loan FAQ page exists.", logger);
+			
+		} catch(Exception e) {
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+		}
+		
+		
+			
+		
 	}
 }

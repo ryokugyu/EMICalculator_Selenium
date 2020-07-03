@@ -3,3 +3,5 @@
 
 #Screenshot files
 *.png
+/bin/
+/target/

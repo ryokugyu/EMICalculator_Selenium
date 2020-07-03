@@ -20,6 +20,7 @@ import com.aventstack.extentreports.Status;
 import com.pageClasses.LandingPage;
 import com.utilities.ExtentReportManager;
 import com.utilities.ReadPropertiesFile;
+import com.utilities.ReportingFunctions;
 
 public class baseTestClass {
 	public WebDriver driver;
@@ -52,7 +53,7 @@ public class baseTestClass {
 				driver = new SafariDriver();
 			}
 		} catch (Exception e) {
-			// reportFail(e.getMessage());
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
 			System.out.println(e.getMessage());
 		}
 

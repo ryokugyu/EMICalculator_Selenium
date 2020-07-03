@@ -77,9 +77,13 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	@FindBy(xpath="//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']")
 	public static WebElement hiddenSlider;
 	
-	//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']
+	@FindBy(xpath="//a[@id='menu-item-dropdown-2207']")
+	public static WebElement FAQs;
 	
-	//@FindBy(xpath= "//div[@class='sep row form-group lterm']//label[2]")
-	//public static WebElement monthButton;
+	@FindBy(xpath="//a[contains(text(),'Car Loan FAQ')]")
+	public static WebElement CarFAQs;
+	
+	@FindBy(xpath="//h1[contains(text(),'Car Loan FAQ')]")
+	public static WebElement CarLoanFAQTitleText;
 
 }

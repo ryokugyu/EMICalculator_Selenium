@@ -1,2 +1,7 @@
-com\testClasses\EMICalculatorSmokeTests.class
+com\SmokeTestSuiteCLass\TotalPaymentAmountVerify.class
+com\SmokeTestSuiteCLass\IsShareButtonWorking.class
+com\SmokeTestSuiteCLass\InvalidValueBehaviour.class
+com\SmokeTestSuiteCLass\IsCarLoanElementPresent.class
 com\testClasses\EMICalculatorBaseTest.class
+com\SmokeTestSuiteCLass\VerifyPageTitle.class
+com\SmokeTestSuiteCLass\IsCarLoanFAQExist.class
