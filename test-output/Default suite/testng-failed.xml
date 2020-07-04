@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SmokeTestSuiteCLass.IsCarLoanFAQExist">
+      <class name="com.InvalidSmokeSuiteTests.InvalidPageTitle">
         <methods>
-          <include name="isCarLoanElementPresent"/>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
           <include name="flushReports"/>
         </methods>
-      </class> <!-- com.SmokeTestSuiteCLass.IsCarLoanFAQExist -->
+      </class> <!-- com.InvalidSmokeSuiteTests.InvalidPageTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

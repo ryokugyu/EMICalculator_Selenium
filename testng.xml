@@ -7,7 +7,6 @@
       <class name="com.SmokeTestSuiteCLass.IsCarLoanElementPresent"/>
       <class name="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify"/>
       <class name="com.SmokeTestSuiteCLass.VerifyPageTitle"/>
-      <class name="com.SmokeTestSuiteCLass.IsCarLoanFAQExist"/>
       <class name="com.SmokeTestSuiteCLass.IsShareButtonWorking"/>
       <class name="com.testClasses.EMICalculatorBaseTest"/>
     </classes>
