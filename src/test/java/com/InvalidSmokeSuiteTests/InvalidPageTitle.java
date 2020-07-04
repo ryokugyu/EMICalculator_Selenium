@@ -1,5 +1,6 @@
 package com.InvalidSmokeSuiteTests;
 
+import org.testng.annotations.Test;
 import java.util.Hashtable;
 import java.util.Properties;
 
@@ -17,7 +18,7 @@ public class InvalidPageTitle extends baseTestClass {
 	Properties prop = ReadPropertiesFile.readConfiguration();
 
 	/******************* Page Title Test *******************/
-	@Test(dataProvider = "EMICalculatorTestInvalidSmokeSuiteDriverTitleData", description = "checks the webpage title")
+	@Test(dataProvider = "EMICalculatorTestInvalidSmokeSuiteDriverTitleData", description = "checks the webpage title", groups = { "invalidTests" })
 	public void verifyPageTitle(Hashtable<String, String> testData) {
 		LandingPage landingPage;
 

@@ -1,8 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 78.673 s <<< FAILURE! - in TestSuite
-isTotalPaymentAmountVerify(com.SmokeTestSuiteCLass.TotalPaymentAmountVerify)  Time elapsed: 8.484 s  <<< FAILURE!
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 106.332 sec <<< FAILURE! - in TestSuite
+verifyPageTitle(com.InvalidSmokeSuiteTests.InvalidPageTitle)  Time elapsed: 6.854 sec  <<< FAILURE!
+java.lang.AssertionError: expected [EMI Calculator for Home Loan  & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]
+	at com.InvalidSmokeSuiteTests.InvalidPageTitle.verifyPageTitle(InvalidPageTitle.java:32)
+
+isCarLoanElementPresent(com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent)  Time elapsed: 16.541 sec  <<< FAILURE!
+java.lang.AssertionError: Car Loan FAQ element not present.
+	at com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent.isCarLoanElementPresent(IsCarLoanFAQPagePresent.java:27)
+
+isTotalPaymentAmountVerify(com.SmokeTestSuiteCLass.TotalPaymentAmountVerify)  Time elapsed: 8.053 sec  <<< FAILURE!
 java.lang.AssertionError: expected [1349876.0] but found [2726737.0]
 	at com.SmokeTestSuiteCLass.TotalPaymentAmountVerify.isTotalPaymentAmountVerify(TotalPaymentAmountVerify.java:36)
 

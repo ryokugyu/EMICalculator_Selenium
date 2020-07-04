@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="3" ignored="0" total="8" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77947" started-at="2020-07-03T16:25:53 IST" finished-at="2020-07-03T16:27:11 IST">
+  <suite name="Suite" duration-ms="105633" started-at="2020-07-04T23:14:47 IST" finished-at="2020-07-04T23:16:33 IST">
     <groups>
+      <group name="invalidTests">
+        <method signature="InvalidPageTitle.verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.InvalidSmokeSuiteTests.InvalidPageTitle@7a9273a8]" name="verifyPageTitle" class="com.InvalidSmokeSuiteTests.InvalidPageTitle"/>
+      </group> <!-- invalidTests -->
     </groups>
-    <test name="Test" duration-ms="77947" started-at="2020-07-03T16:25:53 IST" finished-at="2020-07-03T16:27:11 IST">
+    <test name="Test" duration-ms="105633" started-at="2020-07-04T23:14:47 IST" finished-at="2020-07-04T23:16:33 IST">
       <class name="com.SmokeTestSuiteCLass.VerifyPageTitle">
-        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@12cdcf4]" name="verifyPageTitle" duration-ms="6464" started-at="2020-07-03T16:26:26 IST" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-07-03T16:26:33 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@23d2a7e8]" name="verifyPageTitle" duration-ms="7043" started-at="2020-07-04T23:16:26 IST" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-07-04T23:16:33 IST">
           <params>
             <param index="0">
               <value>
@@ -18,23 +21,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@12cdcf4]" name="flushReports" is-config="true" duration-ms="4211" started-at="2020-07-03T16:26:33 IST" finished-at="2020-07-03T16:26:37 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@23d2a7e8]" name="flushReports" is-config="true" duration-ms="106" started-at="2020-07-04T23:16:33 IST" finished-at="2020-07-04T23:16:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.VerifyPageTitle -->
       <class name="com.SmokeTestSuiteCLass.IsCarLoanElementPresent">
-        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@5bfbf16f]" name="isCarLoanElementPresent" duration-ms="6565" started-at="2020-07-03T16:26:06 IST" description="verify that CarLoan element is present" finished-at="2020-07-03T16:26:13 IST">
+        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@6b9651f3]" name="isCarLoanElementPresent" duration-ms="6341" started-at="2020-07-04T23:15:29 IST" description="verify that CarLoan element is present" finished-at="2020-07-04T23:15:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCarLoanElementPresent -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@5bfbf16f]" name="flushReports" is-config="true" duration-ms="198" started-at="2020-07-03T16:26:13 IST" finished-at="2020-07-03T16:26:13 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@6b9651f3]" name="flushReports" is-config="true" duration-ms="4429" started-at="2020-07-04T23:15:35 IST" finished-at="2020-07-04T23:15:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.IsCarLoanElementPresent -->
       <class name="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify">
-        <test-method status="FAIL" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@25af5db5]" name="isTotalPaymentAmountVerify" duration-ms="8479" started-at="2020-07-03T16:26:13 IST" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-07-03T16:26:22 IST">
+        <test-method status="FAIL" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@687080dc]" name="isTotalPaymentAmountVerify" duration-ms="8052" started-at="2020-07-04T23:16:13 IST" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-07-04T23:16:21 IST">
           <params>
             <param index="0">
               <value>
@@ -77,26 +80,25 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 at org.testng.TestNG.runSuites(TestNG.java:1032)
 at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
 at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTotalPaymentAmountVerify -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@25af5db5]" name="flushReports" is-config="true" duration-ms="4455" started-at="2020-07-03T16:26:22 IST" finished-at="2020-07-03T16:26:26 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@687080dc]" name="flushReports" is-config="true" duration-ms="4446" started-at="2020-07-04T23:16:21 IST" finished-at="2020-07-04T23:16:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.TotalPaymentAmountVerify -->
       <class name="com.testClasses.EMICalculatorBaseTest">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@5f3a4b84]" name="emicalculator" duration-ms="16603" started-at="2020-07-03T16:26:50 IST" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-07-03T16:27:06 IST">
+        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6b57696f]" name="emicalculator" duration-ms="9247" started-at="2020-07-04T23:14:48 IST" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-07-04T23:14:57 IST">
           <params>
             <param index="0">
               <value>
@@ -107,13 +109,128 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@5f3a4b84]" name="flushReports" is-config="true" duration-ms="4193" started-at="2020-07-03T16:27:06 IST" finished-at="2020-07-03T16:27:11 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@6b57696f]" name="flushReports" is-config="true" duration-ms="4366" started-at="2020-07-04T23:14:57 IST" finished-at="2020-07-04T23:15:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.testClasses.EMICalculatorBaseTest -->
+      <class name="com.InvalidSmokeSuiteTests.InvalidPageTitle">
+        <test-method status="FAIL" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.InvalidSmokeSuiteTests.InvalidPageTitle@7a9273a8]" name="verifyPageTitle" duration-ms="6847" started-at="2020-07-04T23:15:22 IST" description="checks the webpage title" data-provider="EMICalculatorTestInvalidSmokeSuiteDriverTitleData" finished-at="2020-07-04T23:15:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{title=EMI Calculator for Home Loan  & Personal Loan in India}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [EMI Calculator for Home Loan  & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [EMI Calculator for Home Loan  & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]
+at org.testng.Assert.fail(Assert.java:97)
+at com.utilities.ReportingFunctions.reportFail(ReportingFunctions.java:16)
+at com.pageClasses.LandingPage.getTitle(LandingPage.java:82)
+at com.InvalidSmokeSuiteTests.InvalidPageTitle.verifyPageTitle(InvalidPageTitle.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.InvalidSmokeSuiteTests.InvalidPageTitle@7a9273a8]" name="flushReports" is-config="true" duration-ms="113" started-at="2020-07-04T23:15:29 IST" finished-at="2020-07-04T23:15:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.InvalidSmokeSuiteTests.InvalidPageTitle -->
+      <class name="com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent">
+        <test-method status="FAIL" signature="isCarLoanElementPresent()[pri:0, instance:com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent@26a7b76d]" name="isCarLoanElementPresent" duration-ms="16542" started-at="2020-07-04T23:15:40 IST" description="verify that CarLoan element is present" finished-at="2020-07-04T23:15:56 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Car Loan FAQ element not present.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Car Loan FAQ element not present.
+at org.testng.Assert.fail(Assert.java:97)
+at com.utilities.ReportingFunctions.reportFail(ReportingFunctions.java:16)
+at com.pageClasses.LandingPage.isCarLoanFAQPagePresent(LandingPage.java:181)
+at com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent.isCarLoanElementPresent(IsCarLoanFAQPagePresent.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCarLoanElementPresent -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent@26a7b76d]" name="flushReports" is-config="true" duration-ms="4449" started-at="2020-07-04T23:15:56 IST" finished-at="2020-07-04T23:16:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent -->
       <class name="com.SmokeTestSuiteCLass.IsShareButtonWorking">
-        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@5bcea91b]" name="isShareButtonWorking" duration-ms="8415" started-at="2020-07-03T16:26:37 IST" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-07-03T16:26:45 IST">
+        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@38bc8ab5]" name="isShareButtonWorking" duration-ms="8302" started-at="2020-07-04T23:16:01 IST" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-07-04T23:16:09 IST">
           <params>
             <param index="0">
               <value>
@@ -124,13 +241,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isShareButtonWorking -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@5bcea91b]" name="flushReports" is-config="true" duration-ms="4452" started-at="2020-07-03T16:26:45 IST" finished-at="2020-07-03T16:26:50 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@38bc8ab5]" name="flushReports" is-config="true" duration-ms="4438" started-at="2020-07-04T23:16:09 IST" finished-at="2020-07-04T23:16:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.IsShareButtonWorking -->
       <class name="com.SmokeTestSuiteCLass.InvalidValueBehaviour">
-        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@59906517]" name="verifyDataCredibility" duration-ms="8811" started-at="2020-07-03T16:25:53 IST" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-07-03T16:26:02 IST">
+        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@5bb21b69]" name="verifyDataCredibility" duration-ms="15935" started-at="2020-07-04T23:15:01 IST" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-07-04T23:15:17 IST">
           <params>
             <param index="0">
               <value>
@@ -141,7 +258,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDataCredibility -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@59906517]" name="flushReports" is-config="true" duration-ms="4600" started-at="2020-07-03T16:26:02 IST" finished-at="2020-07-03T16:26:06 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@5bb21b69]" name="flushReports" is-config="true" duration-ms="4480" started-at="2020-07-04T23:15:17 IST" finished-at="2020-07-04T23:15:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->

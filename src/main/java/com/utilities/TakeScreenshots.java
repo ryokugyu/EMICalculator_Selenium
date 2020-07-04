@@ -16,11 +16,11 @@ public class TakeScreenshots {
 	public static void takeScreenShotOnFailure(WebDriver driver, ExtentTest logger) {
 		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
-
-		File destFile = new File(System.getProperty("user.dir") + "//ScreenShots//" + DateUtil.getTimeStamp() + ".png");
+		String timeStamp = DateUtil.getTimeStamp();
+		File destFile = new File(System.getProperty("user.dir") + "//ScreenShots//" + timeStamp + ".png");
 		try {
 			FileUtils.copyFile(sourceFile, destFile);
-			logger.addScreenCaptureFromPath(System.getProperty("user.dir") + "/ScreenShots/" + ".png");
+			logger.addScreenCaptureFromPath(System.getProperty("user.dir") + "//ScreenShots//" + timeStamp +".png");
 
 		} catch (IOException e) {
 			e.printStackTrace();

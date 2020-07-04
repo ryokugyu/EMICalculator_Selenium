@@ -1,5 +1,6 @@
 package com.SmokeTestSuiteCLass;
 
+import org.testng.annotations.Test;
 import java.util.Hashtable;
 import java.util.Properties;
 

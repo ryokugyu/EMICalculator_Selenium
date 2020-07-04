@@ -178,7 +178,7 @@ public class LandingPage extends pageBaseClass {
 			ReportingFunctions.reportPass("Car Loan FAQ page exists.", logger);
 
 		} catch (Exception e) {
-			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+			ReportingFunctions.reportFail("Car Loan FAQ element not present.", driver, logger);
 		}
 	}
 }

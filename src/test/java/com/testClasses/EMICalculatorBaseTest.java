@@ -1,6 +1,7 @@
 package com.testClasses;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.Hashtable;
 import java.util.Properties;
 import org.testng.annotations.DataProvider;
