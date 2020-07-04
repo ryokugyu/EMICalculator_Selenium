@@ -160,4 +160,25 @@ public class LandingPage extends pageBaseClass {
 		}
 
 	}
+
+	/*
+	 * Verifying whether Car Loan FAQ Page exists or not.
+	 */
+	public void isCarLoanFAQPagePresent() {
+		try {
+			EMICalculatorPageObjects.FAQs.click();
+			logger.log(Status.INFO, "FAQ button clicked.");
+
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOf(EMICalculatorPageObjects.CarFAQs));
+			EMICalculatorPageObjects.CarFAQs.click();
+			logger.log(Status.INFO, "Car Loan FAQ button clicked successfully.");
+
+			Assert.assertEquals(EMICalculatorPageObjects.CarLoanFAQTitleText.getText(), "Car Loan FAQ");
+			ReportingFunctions.reportPass("Car Loan FAQ page exists.", logger);
+
+		} catch (Exception e) {
+			ReportingFunctions.reportFail(e.getMessage(), driver, logger);
+		}
+	}
 }
