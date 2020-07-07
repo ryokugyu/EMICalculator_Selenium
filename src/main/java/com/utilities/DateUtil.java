@@ -1,4 +1,4 @@
-package  com.utilities;
+package com.utilities;
 import java.util.Date;
 
 public class DateUtil {

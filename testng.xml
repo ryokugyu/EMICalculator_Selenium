@@ -5,7 +5,6 @@
     <packages>
       <package name="com.testClasses"/>
       <package name="com.SmokeTestSuiteCLass"/>
-      <package name="com.InvalidSmokeSuiteTests"/>
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

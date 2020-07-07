@@ -1,5 +1,7 @@
 com\SmokeTestSuiteCLass\TotalPaymentAmountVerify.class
 com\SmokeTestSuiteCLass\IsShareButtonWorking.class
+com\InvalidSmokeSuiteTests\InvalidPageTitle.class
+com\InvalidSmokeSuiteTests\IsCarLoanFAQPagePresent.class
 com\SmokeTestSuiteCLass\InvalidValueBehaviour.class
 com\SmokeTestSuiteCLass\IsCarLoanElementPresent.class
 com\testClasses\EMICalculatorBaseTest.class

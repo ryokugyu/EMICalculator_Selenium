@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify">
+      <class name="com.InvalidSmokeSuiteTests.InvalidPageTitle">
         <methods>
-          <include name="isTotalPaymentAmountVerify" invocation-numbers="0"/>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
           <include name="flushReports"/>
         </methods>
-      </class> <!-- com.SmokeTestSuiteCLass.TotalPaymentAmountVerify -->
-      <class name="com.SmokeTestSuiteCLass.IsCarLoanFAQExist">
+      </class> <!-- com.InvalidSmokeSuiteTests.InvalidPageTitle -->
+      <class name="com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent">
         <methods>
           <include name="isCarLoanElementPresent"/>
           <include name="flushReports"/>
         </methods>
-      </class> <!-- com.SmokeTestSuiteCLass.IsCarLoanFAQExist -->
+      </class> <!-- com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

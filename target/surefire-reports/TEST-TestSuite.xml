@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="106.332" tests="8" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="63.411" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\Eclipse Oxygen\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4016295095686349646.tmp"/>
+    <property name="classworlds.conf" value="E:\Eclipse Oxygen\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4242065481280297017.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_251/bin/server;C:/Program Files/Java/jre1.8.0_251/bin;C:/Program Files/Java/jre1.8.0_251/lib/amd64;D:\OracleApp\WINDOWS.X64_193000_db_home\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;D:\WINDOWS.X64_193000_db_home\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Android;D:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;D:\Users\hnail\AppData\Local\Programs\Python\Python37-32\Scripts\;D:\Users\hnail\AppData\Local\Programs\Python\Python37-32\;C:\Users\hnail\AppData\Local\atom\bin;D:\Users\hnail\AppData\Local\Programs\Microsoft VS Code\bin;D:\Program Files\JetBrains\CLion 2019.2.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\extras\CUPTI\lib64;D:\Program Files\JetBrains\PyCharm 2019.2.3\bin;C:\Users\hnail\AppData\Local\GitHubDesktop\bin;C:\Users\hnail\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_241\bin;E:\apache-maven-3.6.3\bin;D:\Program Files (x86)\Sophos\Sophos SSL VPN Client\bin;C:\Users\hnail\AppData\Local\Microsoft\WindowsApps;;D:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,51 +60,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="emicalculator" classname="com.testClasses.EMICalculatorBaseTest" time="9.248"/>
-  <testcase name="verifyDataCredibility" classname="com.SmokeTestSuiteCLass.InvalidValueBehaviour" time="15.935"/>
-  <testcase name="verifyPageTitle" classname="com.InvalidSmokeSuiteTests.InvalidPageTitle" time="6.854">
-    <failure message="expected [EMI Calculator for Home Loan  &amp; Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan &amp; Personal Loan in India]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [EMI Calculator for Home Loan  & Personal Loan in India] but found [EMI Calculator for Home Loan, Car Loan & Personal Loan in India]
-	at com.InvalidSmokeSuiteTests.InvalidPageTitle.verifyPageTitle(InvalidPageTitle.java:32)
-]]></failure>
-    <system-out><![CDATA[******Executing verifyPageTitle Test******
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 29045
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jul 04, 2020 11:15:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="isCarLoanElementPresent" classname="com.SmokeTestSuiteCLass.IsCarLoanElementPresent" time="6.341"/>
-  <testcase name="isCarLoanElementPresent" classname="com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent" time="16.541">
-    <failure message="Car Loan FAQ element not present." type="java.lang.AssertionError">java.lang.AssertionError: Car Loan FAQ element not present.
-	at com.InvalidSmokeSuiteTests.IsCarLoanFAQPagePresent.isCarLoanElementPresent(IsCarLoanFAQPagePresent.java:27)
-</failure>
-    <system-out><![CDATA[******Executing isCarLoanElementPresent Test******
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 27654
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jul 04, 2020 11:15:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="isShareButtonWorking" classname="com.SmokeTestSuiteCLass.IsShareButtonWorking" time="8.302"/>
-  <testcase name="isTotalPaymentAmountVerify" classname="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify" time="8.053">
-    <failure message="expected [1349876.0] but found [2726737.0]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1349876.0] but found [2726737.0]
-	at com.SmokeTestSuiteCLass.TotalPaymentAmountVerify.isTotalPaymentAmountVerify(TotalPaymentAmountVerify.java:36)
-</failure>
-    <system-out><![CDATA[******Executing isTotalPaymentAmountVerify Test******
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 8869
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jul 04, 2020 11:16:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="verifyPageTitle" classname="com.SmokeTestSuiteCLass.VerifyPageTitle" time="7.043"/>
+  <testcase name="emicalculator" classname="com.testClasses.EMICalculatorBaseTest" time="9.564"/>
+  <testcase name="verifyDataCredibility" classname="com.SmokeTestSuiteCLass.InvalidValueBehaviour" time="12.763"/>
+  <testcase name="isCarLoanElementPresent" classname="com.SmokeTestSuiteCLass.IsCarLoanElementPresent" time="7.068"/>
+  <testcase name="isShareButtonWorking" classname="com.SmokeTestSuiteCLass.IsShareButtonWorking" time="8"/>
+  <testcase name="isTotalPaymentAmountVerify" classname="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify" time="7.921"/>
+  <testcase name="verifyPageTitle" classname="com.SmokeTestSuiteCLass.VerifyPageTitle" time="6.318"/>
 </testsuite>
