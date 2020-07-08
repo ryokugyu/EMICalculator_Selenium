@@ -69,21 +69,24 @@ public class EMICalculatorPageObjects extends pageBaseClass {
 	// Home Loan Element
 	@FindBy(xpath = "//*[@id=\"home-loan\"]/a")
 	public static WebElement homeLoan;
-	
-	//Slider element
-	@FindBy(xpath="//div[@id='loantermslider']//div[@class='ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min']")
+
+	// Slider element
+	@FindBy(xpath = "//div[@id='loantermslider']//div[@class='ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min']")
 	public static WebElement slider;
-	
-	@FindBy(xpath="//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']")
+
+	@FindBy(xpath = "//div[@id='loantermslider']//span[@class='ui-slider-handle ui-state-default ui-corner-all']")
 	public static WebElement hiddenSlider;
-	
-	@FindBy(xpath="//a[@id='menu-item-dropdown-2207']")
+
+	// FAQ page element
+	@FindBy(xpath = "//a[@id='menu-item-dropdown-2207']")
 	public static WebElement FAQs;
-	
-	@FindBy(xpath="//a[contains(text(),'Car Loan FAQ')]")
+
+	// Car Loan FAQ page element
+	@FindBy(xpath = "//a[contains(text(),'Car Loan FAQ')]")
 	public static WebElement CarFAQs;
-	
-	@FindBy(xpath="//h1[contains(text(),'Car Loan FAQ')]")
+
+	// Car Loan FAQ Title
+	@FindBy(xpath = "//h1[contains(text(),'Car Loan FAQ')]")
 	public static WebElement CarLoanFAQTitleText;
 
 }

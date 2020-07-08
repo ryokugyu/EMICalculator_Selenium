@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="62112" started-at="2020-07-07T20:45:30 IST" finished-at="2020-07-07T20:46:32 IST">
+  <suite name="Suite" duration-ms="90022" started-at="2020-07-08T21:22:47 IST" finished-at="2020-07-08T21:24:17 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="62112" started-at="2020-07-07T20:45:30 IST" finished-at="2020-07-07T20:46:32 IST">
+    <test name="Test" duration-ms="90022" started-at="2020-07-08T21:22:47 IST" finished-at="2020-07-08T21:24:17 IST">
       <class name="com.SmokeTestSuiteCLass.VerifyPageTitle">
-        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@6b57696f]" name="verifyPageTitle" duration-ms="6318" started-at="2020-07-07T20:46:21 IST" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-07-07T20:46:28 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@587d1d39]" name="verifyPageTitle" duration-ms="6015" started-at="2020-07-08T21:24:07 IST" description="checks the webpage title" data-provider="EMICalculatorTestSmokeSuiteDriverTitleData" finished-at="2020-07-08T21:24:13 IST">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@6b57696f]" name="flushReports" is-config="true" duration-ms="4453" started-at="2020-07-07T20:46:28 IST" finished-at="2020-07-07T20:46:32 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.VerifyPageTitle@587d1d39]" name="flushReports" is-config="true" duration-ms="4585" started-at="2020-07-08T21:24:13 IST" finished-at="2020-07-08T21:24:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.VerifyPageTitle -->
       <class name="com.SmokeTestSuiteCLass.IsCarLoanElementPresent">
-        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@2c039ac6]" name="isCarLoanElementPresent" duration-ms="7069" started-at="2020-07-07T20:45:58 IST" description="verify that CarLoan element is present" finished-at="2020-07-07T20:46:05 IST">
+        <test-method status="PASS" signature="isCarLoanElementPresent()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@3e57cd70]" name="isCarLoanElementPresent" duration-ms="10930" started-at="2020-07-08T21:23:20 IST" description="verify that CarLoan element is present" finished-at="2020-07-08T21:23:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCarLoanElementPresent -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@2c039ac6]" name="flushReports" is-config="true" duration-ms="94" started-at="2020-07-07T20:46:05 IST" finished-at="2020-07-07T20:46:05 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsCarLoanElementPresent@3e57cd70]" name="flushReports" is-config="true" duration-ms="4442" started-at="2020-07-08T21:23:31 IST" finished-at="2020-07-08T21:23:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.IsCarLoanElementPresent -->
       <class name="com.SmokeTestSuiteCLass.TotalPaymentAmountVerify">
-        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@58c1670b]" name="isTotalPaymentAmountVerify" duration-ms="7920" started-at="2020-07-07T20:46:13 IST" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-07-07T20:46:21 IST">
+        <test-method status="PASS" signature="isTotalPaymentAmountVerify(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@2c039ac6]" name="isTotalPaymentAmountVerify" duration-ms="8427" started-at="2020-07-08T21:23:54 IST" description="verify that total payment amount is correct" data-provider="EMICalculatorVerifyTotalPaymentAmountData" finished-at="2020-07-08T21:24:02 IST">
           <params>
             <param index="0">
               <value>
@@ -45,13 +45,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTotalPaymentAmountVerify -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@58c1670b]" name="flushReports" is-config="true" duration-ms="182" started-at="2020-07-07T20:46:21 IST" finished-at="2020-07-07T20:46:21 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.TotalPaymentAmountVerify@2c039ac6]" name="flushReports" is-config="true" duration-ms="4452" started-at="2020-07-08T21:24:02 IST" finished-at="2020-07-08T21:24:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.TotalPaymentAmountVerify -->
       <class name="com.testClasses.EMICalculatorBaseTest">
-        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@3e57cd70]" name="emicalculator" duration-ms="9565" started-at="2020-07-07T20:45:30 IST" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-07-07T20:45:40 IST">
+        <test-method status="PASS" signature="emicalculator(java.util.Hashtable)[pri:0, instance:com.testClasses.EMICalculatorBaseTest@32d2fa64]" name="emicalculator" duration-ms="10040" started-at="2020-07-08T21:22:48 IST" description="executes the complete test" data-provider="EMICalculatorTestData" finished-at="2020-07-08T21:22:58 IST">
           <params>
             <param index="0">
               <value>
@@ -62,13 +62,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emicalculator -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@3e57cd70]" name="flushReports" is-config="true" duration-ms="426" started-at="2020-07-07T20:45:40 IST" finished-at="2020-07-07T20:45:40 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.testClasses.EMICalculatorBaseTest@32d2fa64]" name="flushReports" is-config="true" duration-ms="4628" started-at="2020-07-08T21:22:58 IST" finished-at="2020-07-08T21:23:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.testClasses.EMICalculatorBaseTest -->
       <class name="com.SmokeTestSuiteCLass.IsShareButtonWorking">
-        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@587d1d39]" name="isShareButtonWorking" duration-ms="8000" started-at="2020-07-07T20:46:05 IST" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-07-07T20:46:13 IST">
+        <test-method status="PASS" signature="isShareButtonWorking(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@9a7504c]" name="isShareButtonWorking" duration-ms="14181" started-at="2020-07-08T21:23:35 IST" description="verify that share button is working properly" data-provider="EMICalculatorTestData" finished-at="2020-07-08T21:23:49 IST">
           <params>
             <param index="0">
               <value>
@@ -79,13 +79,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isShareButtonWorking -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@587d1d39]" name="flushReports" is-config="true" duration-ms="99" started-at="2020-07-07T20:46:13 IST" finished-at="2020-07-07T20:46:13 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.IsShareButtonWorking@9a7504c]" name="flushReports" is-config="true" duration-ms="4449" started-at="2020-07-08T21:23:49 IST" finished-at="2020-07-08T21:23:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- com.SmokeTestSuiteCLass.IsShareButtonWorking -->
       <class name="com.SmokeTestSuiteCLass.InvalidValueBehaviour">
-        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@9a7504c]" name="verifyDataCredibility" duration-ms="12763" started-at="2020-07-07T20:45:40 IST" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-07-07T20:45:53 IST">
+        <test-method status="PASS" signature="verifyDataCredibility(java.util.Hashtable)[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@1d8d30f7]" name="verifyDataCredibility" duration-ms="12830" started-at="2020-07-08T21:23:02 IST" description="valid input test" data-provider="EMICalculatorVerifyIncorrectValuesBehaviour" finished-at="2020-07-08T21:23:15 IST">
           <params>
             <param index="0">
               <value>
@@ -96,7 +96,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDataCredibility -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@9a7504c]" name="flushReports" is-config="true" duration-ms="4556" started-at="2020-07-07T20:45:53 IST" finished-at="2020-07-07T20:45:58 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:com.SmokeTestSuiteCLass.InvalidValueBehaviour@1d8d30f7]" name="flushReports" is-config="true" duration-ms="4461" started-at="2020-07-08T21:23:15 IST" finished-at="2020-07-08T21:23:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
