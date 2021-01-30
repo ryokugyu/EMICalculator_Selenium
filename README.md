@@ -1,6 +1,3 @@
-# Cognizant Hackathon TechAdmirals
-
-
 ## Problem Statement
 Find the interest amount for current year for:
 - Buying a  car of 15 Lac
