@@ -6,4 +6,4 @@ Find the interest amount for current year for:
 
 Display the interest amount & principal amount of first month.
 
-(Suggested Site: **emicalculator.net  / HDFCbank.com** etc. however you are free to use any other legitimate site)
+Website used: emicalculator.net
